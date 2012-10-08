@@ -1,0 +1,597 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>DailymotionOAuthDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 737)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Dailymotion SDK </a></h1>
+				<a id="developerHome" href="../index.html">Dailymotion S.A</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">DailymotionOAuthDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/dailymotionOAuthRequest:createModalDialogWithView:">&nbsp;&nbsp;&nbsp;&nbsp;- dailymotionOAuthRequest:createModalDialogWithView:</option>
+	
+	<option value="//api/name/dailymotionOAuthRequest:didRequestUserCredentialsWithHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- dailymotionOAuthRequest:didRequestUserCredentialsWithHandler:</option>
+	
+	<option value="//api/name/dailymotionOAuthRequest:shouldOpenURLInExternalBrowser:">&nbsp;&nbsp;&nbsp;&nbsp;- dailymotionOAuthRequest:shouldOpenURLInExternalBrowser:</option>
+	
+	<option value="//api/name/dailymotionOAuthRequestCloseModalDialog:">&nbsp;&nbsp;&nbsp;&nbsp;- dailymotionOAuthRequestCloseModalDialog:</option>
+	
+	<option value="//api/name/dailymotionOAuthRequestSessionDidExpire:">&nbsp;&nbsp;&nbsp;&nbsp;- dailymotionOAuthRequestSessionDidExpire:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dailymotionOAuthRequest:createModalDialogWithView:">dailymotionOAuthRequest:createModalDialogWithView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dailymotionOAuthRequest:didRequestUserCredentialsWithHandler:">dailymotionOAuthRequest:didRequestUserCredentialsWithHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dailymotionOAuthRequest:shouldOpenURLInExternalBrowser:">dailymotionOAuthRequest:shouldOpenURLInExternalBrowser:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dailymotionOAuthRequestCloseModalDialog:">dailymotionOAuthRequestCloseModalDialog:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dailymotionOAuthRequestSessionDidExpire:">dailymotionOAuthRequestSessionDidExpire:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="DailymotionOAuthDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">DailymotionOAuthDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">DMOAuthClient.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Delegate protocol used to request end-user input when necessary.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dailymotionOAuthRequest:createModalDialogWithView:">&ndash;&nbsp;dailymotionOAuthRequest:createModalDialogWithView:</a></code>
+		<span class="tooltip"><p>This delegate method is called when the Dailymotion SDK needs to show a modal dialog window to the user in order to
+ask for end-user permission to connect your application with his account. You may implement this method only if you
+choose <code>DailymotionGrantTypeAuthorization</code> grant type. In response to this delegate, your application have to present the
+given view to the end-user.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dailymotionOAuthRequestCloseModalDialog:">&ndash;&nbsp;dailymotionOAuthRequestCloseModalDialog:</a></code>
+		<span class="tooltip"><p>This delegate method is called when the Dailymotion SDK authorization process is finished and instruct the reciever
+to close the previousely created modal dialog.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dailymotionOAuthRequest:didRequestUserCredentialsWithHandler:">&ndash;&nbsp;dailymotionOAuthRequest:didRequestUserCredentialsWithHandler:</a></code>
+		<span class="tooltip"><p>Called when the grant method is <code>DailymotionGrantTypePassword</code> and the credentials are requested by the library.
+The delegate have to ask the user for her credentials and need to call back the <code>`handler</code> method in order for
+the pending API calls to be completed.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dailymotionOAuthRequest:shouldOpenURLInExternalBrowser:">&ndash;&nbsp;dailymotionOAuthRequest:shouldOpenURLInExternalBrowser:</a></code>
+		<span class="tooltip"><p>When a link is clicked in the authorization dialog, like for instance to create an account or recover a lost password,
+the Dailymotion SDK asks the UI delegate if the link should be openned in an external browser or if the UI delegate
+want to handle the openned link by itself.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dailymotionOAuthRequestSessionDidExpire:">&ndash;&nbsp;dailymotionOAuthRequestSessionDidExpire:</a></code>
+		<span class="tooltip"><p>Called when the session expired and can&rsquo;t be automatically resumed.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/dailymotionOAuthRequest:createModalDialogWithView:" title="dailymotionOAuthRequest:createModalDialogWithView:"></a>
+	<h3 class="subsubtitle method-title">dailymotionOAuthRequest:createModalDialogWithView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This delegate method is called when the Dailymotion SDK needs to show a modal dialog window to the user in order to
+ask for end-user permission to connect your application with his account. You may implement this method only if you
+choose <code>DailymotionGrantTypeAuthorization</code> grant type. In response to this delegate, your application have to present the
+given view to the end-user.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)dailymotionOAuthRequest:(DMOAuthClient *)<em>client</em> createModalDialogWithView:(UIView *)<em>view</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p>The <a href="../Classes/DMOAuthClient.html">DMOAuthClient</a> sending this message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>The view to display to the end user.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This delegate method is called when the Dailymotion SDK needs to show a modal dialog window to the user in order to
+ask for end-user permission to connect your application with his account. You may implement this method only if you
+choose <code>DailymotionGrantTypeAuthorization</code> grant type. In response to this delegate, your application have to present the
+given view to the end-user.</p>
+
+<p>The default implementation of this delegate method is to create a new window with the content of the view.</p>
+
+<p>You MUST implement this delegate method if you set the grant type to <code>DailymotionGrantTypeAuthorization</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMOAuthClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dailymotionOAuthRequest:didRequestUserCredentialsWithHandler:" title="dailymotionOAuthRequest:didRequestUserCredentialsWithHandler:"></a>
+	<h3 class="subsubtitle method-title">dailymotionOAuthRequest:didRequestUserCredentialsWithHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the grant method is <code>DailymotionGrantTypePassword</code> and the credentials are requested by the library.
+The delegate have to ask the user for her credentials and need to call back the <code>`handler</code> method in order for
+the pending API calls to be completed.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)dailymotionOAuthRequest:(DMOAuthClient *)<em>client</em> didRequestUserCredentialsWithHandler:(void ( ^ ) ( NSString *username , NSString *password ))<em>setCredentials</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p>The <a href="../Classes/DMOAuthClient.html">DMOAuthClient</a> requesting this information.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>setCredentials</em></dt>
+			<dd><p>The block to call back with the obtained username and password.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when the grant method is <code>DailymotionGrantTypePassword</code> and the credentials are requested by the library.
+The delegate have to ask the user for her credentials and need to call back the <code>`handler</code> method in order for
+the pending API calls to be completed.</p>
+
+<p>You MUST implement this delegate method if you set the grant type to <code>DailymotionGrantTypePassword</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMOAuthClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dailymotionOAuthRequest:shouldOpenURLInExternalBrowser:" title="dailymotionOAuthRequest:shouldOpenURLInExternalBrowser:"></a>
+	<h3 class="subsubtitle method-title">dailymotionOAuthRequest:shouldOpenURLInExternalBrowser:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>When a link is clicked in the authorization dialog, like for instance to create an account or recover a lost password,
+the Dailymotion SDK asks the UI delegate if the link should be openned in an external browser or if the UI delegate
+want to handle the openned link by itself.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)dailymotionOAuthRequest:(DMOAuthClient *)<em>client</em> shouldOpenURLInExternalBrowser:(NSURL *)<em>url</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p>The <a href="../Classes/DMOAuthClient.html">DMOAuthClient</a> requesting this information.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The URL to the webpage to show to the end-user.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>When a link is clicked in the authorization dialog, like for instance to create an account or recover a lost password,
+the Dailymotion SDK asks the UI delegate if the link should be openned in an external browser or if the UI delegate
+want to handle the openned link by itself.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMOAuthClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dailymotionOAuthRequestCloseModalDialog:" title="dailymotionOAuthRequestCloseModalDialog:"></a>
+	<h3 class="subsubtitle method-title">dailymotionOAuthRequestCloseModalDialog:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This delegate method is called when the Dailymotion SDK authorization process is finished and instruct the reciever
+to close the previousely created modal dialog.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)dailymotionOAuthRequestCloseModalDialog:(DMOAuthClient *)<em>client</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p>The <a href="../Classes/DMOAuthClient.html">DMOAuthClient</a> sending this message</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This delegate method is called when the Dailymotion SDK authorization process is finished and instruct the reciever
+to close the previousely created modal dialog.</p>
+
+<p>You MUST implement this delegate method if you set the grant type to <code>DailymotionGrantTypeAuthorization</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMOAuthClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dailymotionOAuthRequestSessionDidExpire:" title="dailymotionOAuthRequestSessionDidExpire:"></a>
+	<h3 class="subsubtitle method-title">dailymotionOAuthRequestSessionDidExpire:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the session expired and can&rsquo;t be automatically resumed.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)dailymotionOAuthRequestSessionDidExpire:(DMOAuthClient *)<em>client</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>client</em></dt>
+			<dd><p>The <a href="../Classes/DMOAuthClient.html">DMOAuthClient</a> sending this message</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Called when the session expired and can&rsquo;t be automatically resumed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMOAuthClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Dailymotion S.A. All rights reserved. (Last updated: 2012-10-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 737)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

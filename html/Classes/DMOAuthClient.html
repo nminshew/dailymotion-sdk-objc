@@ -1,0 +1,848 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>DMOAuthClient Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 737)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Dailymotion SDK </a></h1>
+				<a id="developerHome" href="../index.html">Dailymotion S.A</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">DMOAuthClient Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/autoSaveSession">&nbsp;&nbsp;&nbsp;&nbsp;autoSaveSession</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/grantType">&nbsp;&nbsp;&nbsp;&nbsp;grantType</option>
+	
+	<option value="//api/name/session">&nbsp;&nbsp;&nbsp;&nbsp;session</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/clearSession">&nbsp;&nbsp;&nbsp;&nbsp;- clearSession</option>
+	
+	<option value="//api/name/performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:</option>
+	
+	<option value="//api/name/readSession">&nbsp;&nbsp;&nbsp;&nbsp;- readSession</option>
+	
+	<option value="//api/name/sessionStoreKey">&nbsp;&nbsp;&nbsp;&nbsp;- sessionStoreKey</option>
+	
+	<option value="//api/name/setGrantType:withAPIKey:secret:scope:">&nbsp;&nbsp;&nbsp;&nbsp;- setGrantType:withAPIKey:secret:scope:</option>
+	
+	<option value="//api/name/storeSession">&nbsp;&nbsp;&nbsp;&nbsp;- storeSession</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/autoSaveSession">autoSaveSession</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/grantType">grantType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/session">session</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clearSession">clearSession</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:">performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readSession">readSession</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sessionStoreKey">sessionStoreKey</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setGrantType:withAPIKey:secret:scope:">setGrantType:withAPIKey:secret:scope:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/storeSession">storeSession</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="DMOAuthClient Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">DMOAuthClient Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">DMOAuthClient.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A wrapper for <a href="../Classes/DMNetworking.html">DMNetworking</a> to perform OAuth 2.0 requests.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		<span class="tooltip"><p>Set the <a href="#//api/name/delegate">delegate</a> that conforms to the <code>DailymotionDelegate</code> protocol.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/session">&nbsp;&nbsp;session</a></code>
+		<span class="tooltip"><p>This propoerty contains an OAuth 2.0 valid <a href="#//api/name/session">session</a> to be used to access the API or request an access token. This <a href="#//api/name/session">session</a>
+is normaly autmoatically generated using the provided API key/secret. Although, you can manualy set it if you got,
+for instance, an <code>access_token</code> from another source like your own backend.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/autoSaveSession">&nbsp;&nbsp;autoSaveSession</a></code>
+		<span class="tooltip"><p>If this property is set to <code>NO</code>, the <a href="#//api/name/session"><code>session</code></a> won&rsquo;t be stored automatically for latter use. When not stored, your
+application will have to ask end-user to authorize your API key each time you restart your application.
+By default this property is set to <code>YES</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:">&ndash;&nbsp;performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:</a></code>
+		<span class="tooltip"><p>Perform a request with oauth authentication</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setGrantType:withAPIKey:secret:scope:">&ndash;&nbsp;setGrantType:withAPIKey:secret:scope:</a></code>
+		<span class="tooltip"><p>Set the grant type to be used for API requests.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/grantType">&nbsp;&nbsp;grantType</a></code>
+		<span class="tooltip"><p>Get the <a href="#//api/name/grantType">grantType</a> currently in use for API requests</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clearSession">&ndash;&nbsp;clearSession</a></code>
+		<span class="tooltip"><p>Clears the <a href="#//api/name/session">session</a> for the current grant type.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sessionStoreKey">&ndash;&nbsp;sessionStoreKey</a></code>
+		<span class="tooltip"><p>Returns the key used to store the <a href="#//api/name/session">session</a>. If this method returns nil, the <a href="#//api/name/session">session</a> won&rsquo;t be stored.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/storeSession">&ndash;&nbsp;storeSession</a></code>
+		<span class="tooltip"><p>Store the current <a href="#//api/name/session">session</a> on a local store for future use. By default, the <a href="#//api/name/session">session</a> is stored in the NSUserDefaults.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/readSession">&ndash;&nbsp;readSession</a></code>
+		<span class="tooltip"><p>Read a previousely stored <a href="#//api/name/session">session</a> from the local store.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/autoSaveSession" title="autoSaveSession"></a>
+	<h3 class="subsubtitle method-title">autoSaveSession</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If this property is set to <code>NO</code>, the <a href="#//api/name/session"><code>session</code></a> won&rsquo;t be stored automatically for latter use. When not stored, your
+application will have to ask end-user to authorize your API key each time you restart your application.
+By default this property is set to <code>YES</code>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL autoSaveSession</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If this property is set to <code>NO</code>, the <a href="#//api/name/session"><code>session</code></a> won&rsquo;t be stored automatically for latter use. When not stored, your
+application will have to ask end-user to authorize your API key each time you restart your application.
+By default this property is set to <code>YES</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMOAuthClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the <a href="#//api/name/delegate">delegate</a> that conforms to the <code>DailymotionDelegate</code> protocol.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;DailymotionOAuthDelegate&gt; delegate</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the <a href="#//api/name/delegate">delegate</a> that conforms to the <code>DailymotionDelegate</code> protocol.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMOAuthClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/grantType" title="grantType"></a>
+	<h3 class="subsubtitle method-title">grantType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the <a href="#//api/name/grantType">grantType</a> currently in use for API requests</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) DailymotionGrantType grantType</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the <a href="#//api/name/grantType">grantType</a> currently in use for API requests</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMOAuthClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/session" title="session"></a>
+	<h3 class="subsubtitle method-title">session</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This propoerty contains an OAuth 2.0 valid <a href="#//api/name/session">session</a> to be used to access the API or request an access token. This <a href="#//api/name/session">session</a>
+is normaly autmoatically generated using the provided API key/secret. Although, you can manualy set it if you got,
+for instance, an <code>access_token</code> from another source like your own backend.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) DMOAuthSession *session</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This propoerty contains an OAuth 2.0 valid <a href="#//api/name/session">session</a> to be used to access the API or request an access token. This <a href="#//api/name/session">session</a>
+is normaly autmoatically generated using the provided API key/secret. Although, you can manualy set it if you got,
+for instance, an <code>access_token</code> from another source like your own backend.</p>
+
+<p>A <a href="#//api/name/session"><code>session</code></a> is an NSDictionary which can contain any of the following keys:
+&ndash; <code>access_token</code>: a token which can be used to access the API
+&ndash; <code>expires</code>: an <code>NSDate</code> which indicates until when the <code>access_token</code> remains valid
+&ndash; <code>refresh_token</code>: a token used to request a new valid <code>access_token</code> without having to ask the end-user again and again
+&ndash; <code>scope</code>: an indication on the permission scope granted by the end-user for this <a href="#//api/name/session">session</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMOAuthClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/clearSession" title="clearSession"></a>
+	<h3 class="subsubtitle method-title">clearSession</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Clears the <a href="#//api/name/session">session</a> for the current grant type.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)clearSession</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Clears the <a href="#//api/name/session">session</a> for the current grant type.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMOAuthClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:" title="performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform a request with oauth authentication</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMOAuthRequestOperation *)performRequestWithURL:(NSURL *)<em>URL</em> method:(NSString *)<em>method</em> payload:(id)<em>payload</em> headers:(NSDictionary *)<em>headers</em> cachePolicy:(NSURLRequestCachePolicy)<em>cachePolicy</em> completionHandler:(void ( ^ ) ( NSURLResponse *, NSData *, NSError *))<em>handler</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The URL to send request for.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>method</em></dt>
+			<dd><p>The HTTP method to use for the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>payload</em></dt>
+			<dd><p>The payload for POST or PUT HTTP method. @see <a href="../Classes/DMNetworking.html">DMNetworking</a> for the list of supported types.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>headers</em></dt>
+			<dd><p>A dictionary with some custom headers to add.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cachePolicy</em></dt>
+			<dd><p>The cache policy for the request.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handler</em></dt>
+			<dd><p>The block to be called with the response.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform a request with oauth authentication</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMOAuthClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/readSession" title="readSession"></a>
+	<h3 class="subsubtitle method-title">readSession</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Read a previousely stored <a href="#//api/name/session">session</a> from the local store.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMOAuthSession *)readSession</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Read a previousely stored <a href="#//api/name/session">session</a> from the local store.</p>
+
+<p>This method can be overloaded to handle different type of storage.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMOAuthClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sessionStoreKey" title="sessionStoreKey"></a>
+	<h3 class="subsubtitle method-title">sessionStoreKey</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the key used to store the <a href="#//api/name/session">session</a>. If this method returns nil, the <a href="#//api/name/session">session</a> won&rsquo;t be stored.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)sessionStoreKey</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the key used to store the <a href="#//api/name/session">session</a>. If this method returns nil, the <a href="#//api/name/session">session</a> won&rsquo;t be stored.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMOAuthClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setGrantType:withAPIKey:secret:scope:" title="setGrantType:withAPIKey:secret:scope:"></a>
+	<h3 class="subsubtitle method-title">setGrantType:withAPIKey:secret:scope:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the grant type to be used for API requests.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setGrantType:(DailymotionGrantType)<em>grantType</em> withAPIKey:(NSString *)<em>apiKey</em> secret:(NSString *)<em>apiSecret</em> scope:(NSString *)<em>scope</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>grantType</em></dt>
+			<dd><p>Can be one of <code>DailymotionGrantTypeAuthorization</code>, <code>DailymotionGrantTypeClientCredentials</code> or ``DailymotionGrantTypePassword```.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>apiKey</em></dt>
+			<dd><p>The API key</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>apiSecret</em></dt>
+			<dd><p>The API secret</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>scope</em></dt>
+			<dd><p>The permission scope requested (can be none of any of <code>read</code>, <code>write</code> or <code>delete</code>).
+To specify several scope, separate them with whitespaces.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the grant type to be used for API requests.</p>
+
+<p>To create an API key/secret pair, go to: <a href="http://www.dailymotion.com/profile/developer">http://www.dailymotion.com/profile/developer</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMOAuthClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/storeSession" title="storeSession"></a>
+	<h3 class="subsubtitle method-title">storeSession</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Store the current <a href="#//api/name/session">session</a> on a local store for future use. By default, the <a href="#//api/name/session">session</a> is stored in the NSUserDefaults.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)storeSession</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Store the current <a href="#//api/name/session">session</a> on a local store for future use. By default, the <a href="#//api/name/session">session</a> is stored in the NSUserDefaults.</p>
+
+<p>This method can be overloaded to handle different type of storage.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMOAuthClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Dailymotion S.A. All rights reserved. (Last updated: 2012-10-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 737)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1219 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>DMNetworking Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 737)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Dailymotion SDK </a></h1>
+				<a id="developerHome" href="../index.html">Dailymotion S.A</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">DMNetworking Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/maxConcurrency">&nbsp;&nbsp;&nbsp;&nbsp;maxConcurrency</option>
+	
+	<option value="//api/name/timeout">&nbsp;&nbsp;&nbsp;&nbsp;timeout</option>
+	
+	<option value="//api/name/userAgent">&nbsp;&nbsp;&nbsp;&nbsp;userAgent</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/totalRequestCount">&nbsp;&nbsp;&nbsp;&nbsp;+ totalRequestCount</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/cancelAllConnections">&nbsp;&nbsp;&nbsp;&nbsp;- cancelAllConnections</option>
+	
+	<option value="//api/name/deleteURL:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteURL:completionHandler:</option>
+	
+	<option value="//api/name/deleteURL:headers:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteURL:headers:completionHandler:</option>
+	
+	<option value="//api/name/getURL:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- getURL:completionHandler:</option>
+	
+	<option value="//api/name/getURL:headers:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- getURL:headers:completionHandler:</option>
+	
+	<option value="//api/name/performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:</option>
+	
+	<option value="//api/name/postURL:payload:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- postURL:payload:completionHandler:</option>
+	
+	<option value="//api/name/postURL:payload:headers:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- postURL:payload:headers:completionHandler:</option>
+	
+	<option value="//api/name/putURL:payload:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- putURL:payload:completionHandler:</option>
+	
+	<option value="//api/name/putURL:payload:headers:completionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- putURL:payload:headers:completionHandler:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxConcurrency">maxConcurrency</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timeout">timeout</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userAgent">userAgent</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/totalRequestCount">totalRequestCount</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelAllConnections">cancelAllConnections</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteURL:completionHandler:">deleteURL:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteURL:headers:completionHandler:">deleteURL:headers:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getURL:completionHandler:">getURL:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getURL:headers:completionHandler:">getURL:headers:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:">performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postURL:payload:completionHandler:">postURL:payload:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postURL:payload:headers:completionHandler:">postURL:payload:headers:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/putURL:payload:completionHandler:">putURL:payload:completionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/putURL:payload:headers:completionHandler:">putURL:payload:headers:completionHandler:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="DMNetworking Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">DMNetworking Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">DMNetworking.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Easier to use interface on tope of NSURLConnection using NSOperation to handle maximum settable
+maximum concurrent connection limit.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/userAgent">&nbsp;&nbsp;userAgent</a></code>
+		<span class="tooltip"><p>Set this value to customize the <a href="#//api/name/userAgent">userAgent</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maxConcurrency">&nbsp;&nbsp;maxConcurrency</a></code>
+		<span class="tooltip"><p>Set the maximum number of concurrent connection allowed for this network queue.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/timeout">&nbsp;&nbsp;timeout</a></code>
+		<span class="tooltip"><p>Defines the default <a href="#//api/name/timeout">timeout</a> for connections created in this queue</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/totalRequestCount">+&nbsp;totalRequestCount</a></code>
+		<span class="tooltip"><p>A global accross all queues number of requests sent by this call for accounting</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getURL:completionHandler:">&ndash;&nbsp;getURL:completionHandler:</a></code>
+		<span class="tooltip"><p>Perform a GET request</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getURL:headers:completionHandler:">&ndash;&nbsp;getURL:headers:completionHandler:</a></code>
+		<span class="tooltip"><p>Perform a GET request with custom additional headers</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postURL:payload:completionHandler:">&ndash;&nbsp;postURL:payload:completionHandler:</a></code>
+		<span class="tooltip"><p>Perform a POST request with a given payload</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postURL:payload:headers:completionHandler:">&ndash;&nbsp;postURL:payload:headers:completionHandler:</a></code>
+		<span class="tooltip"><p>Perform a POST request with a given payload and some custom additional headers</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/putURL:payload:completionHandler:">&ndash;&nbsp;putURL:payload:completionHandler:</a></code>
+		<span class="tooltip"><p>Perform a PUT request with a given payload</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/putURL:payload:headers:completionHandler:">&ndash;&nbsp;putURL:payload:headers:completionHandler:</a></code>
+		<span class="tooltip"><p>Perform a PUT request with a given payload and some custom additional headers</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteURL:completionHandler:">&ndash;&nbsp;deleteURL:completionHandler:</a></code>
+		<span class="tooltip"><p>Perform a DELETE request</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteURL:headers:completionHandler:">&ndash;&nbsp;deleteURL:headers:completionHandler:</a></code>
+		<span class="tooltip"><p>Perform a DELETE request with some custom additional headers</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:">&ndash;&nbsp;performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:</a></code>
+		<span class="tooltip"><p>Perform ah HTTP request</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelAllConnections">&ndash;&nbsp;cancelAllConnections</a></code>
+		<span class="tooltip"><p>Cancel all currently running requests of this queue</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/maxConcurrency" title="maxConcurrency"></a>
+	<h3 class="subsubtitle method-title">maxConcurrency</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the maximum number of concurrent connection allowed for this network queue.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSUInteger maxConcurrency</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set the maximum number of concurrent connection allowed for this network queue.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMNetworking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/timeout" title="timeout"></a>
+	<h3 class="subsubtitle method-title">timeout</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Defines the default <a href="#//api/name/timeout">timeout</a> for connections created in this queue</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSUInteger timeout</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Defines the default <a href="#//api/name/timeout">timeout</a> for connections created in this queue</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMNetworking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/userAgent" title="userAgent"></a>
+	<h3 class="subsubtitle method-title">userAgent</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set this value to customize the <a href="#//api/name/userAgent">userAgent</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *userAgent</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set this value to customize the <a href="#//api/name/userAgent">userAgent</a>.</p>
+
+<p>Nil value means default NSURLConnection user-agent.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMNetworking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/totalRequestCount" title="totalRequestCount"></a>
+	<h3 class="subsubtitle method-title">totalRequestCount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A global accross all queues number of requests sent by this call for accounting</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (NSUInteger)totalRequestCount</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A global accross all queues number of requests sent by this call for accounting</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMNetworking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelAllConnections" title="cancelAllConnections"></a>
+	<h3 class="subsubtitle method-title">cancelAllConnections</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancel all currently running requests of this queue</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)cancelAllConnections</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Cancel all currently running requests of this queue</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMNetworking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteURL:completionHandler:" title="deleteURL:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">deleteURL:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform a DELETE request</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMNetRequestOperation *)deleteURL:(NSURL *)<em>URL</em> completionHandler:(void ( ^ ) ( NSURLResponse *, NSData *, NSError *))<em>handler</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The URL to DELETE</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handler</em></dt>
+			<dd><p>The block to be called with response data</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A cancellable <a href="../Classes/DMNetRequestOperation.html">DMNetRequestOperation</a> setup and queued in the current network queue.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform a DELETE request</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMNetworking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteURL:headers:completionHandler:" title="deleteURL:headers:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">deleteURL:headers:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform a DELETE request with some custom additional headers</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMNetRequestOperation *)deleteURL:(NSURL *)<em>URL</em> headers:(NSDictionary *)<em>headers</em> completionHandler:(void ( ^ ) ( NSURLResponse *, NSData *, NSError *))<em>handler</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The URL to DELETE</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>headers</em></dt>
+			<dd><p>A dictionnary of custom headers for the request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handler</em></dt>
+			<dd><p>The block to be called with response data</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A cancallable operation</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform a DELETE request with some custom additional headers</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMNetworking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getURL:completionHandler:" title="getURL:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">getURL:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform a GET request</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMNetRequestOperation *)getURL:(NSURL *)<em>URL</em> completionHandler:(void ( ^ ) ( NSURLResponse *, NSData *, NSError *))<em>handler</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>the URL to GET on</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handler</em></dt>
+			<dd><p>The block to be called with response data</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A cancellable <a href="../Classes/DMNetRequestOperation.html">DMNetRequestOperation</a> setup and queued in the current network queue.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform a GET request</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMNetworking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getURL:headers:completionHandler:" title="getURL:headers:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">getURL:headers:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform a GET request with custom additional headers</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMNetRequestOperation *)getURL:(NSURL *)<em>URL</em> headers:(NSDictionary *)<em>headers</em> completionHandler:(void ( ^ ) ( NSURLResponse *, NSData *, NSError *))<em>handler</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The URL to GET on</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>headers</em></dt>
+			<dd><p>A dictionnary of custom headers for the request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handler</em></dt>
+			<dd><p>The block to be called with response data</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A cancellable <a href="../Classes/DMNetRequestOperation.html">DMNetRequestOperation</a> setup and queued in the current network queue.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform a GET request with custom additional headers</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMNetworking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:" title="performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">performRequestWithURL:method:payload:headers:cachePolicy:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform ah HTTP request</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMNetRequestOperation *)performRequestWithURL:(NSURL *)<em>URL</em> method:(NSString *)<em>method</em> payload:(id)<em>payload</em> headers:(NSDictionary *)<em>headers</em> cachePolicy:(NSURLRequestCachePolicy)<em>cachePolicy</em> completionHandler:(void ( ^ ) ( NSURLResponse *, NSData *, NSError *))<em>handler</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The URL of the request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>method</em></dt>
+			<dd><p>The HTTP method of the request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>payload</em></dt>
+			<dd><p>The request body for POST and PUT method. Supported types are NSDictionary, NSData, NSString and NSInputStream</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>headers</em></dt>
+			<dd><p>The request additional headers</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cachePolicy</em></dt>
+			<dd><p>The NSURLRequestCachePolicy to use for this request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handler</em></dt>
+			<dd><p>The block to be called once request is completed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A cancellable <a href="../Classes/DMNetRequestOperation.html">DMNetRequestOperation</a> setup and queued in the current network queue.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform ah HTTP request</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMNetworking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postURL:payload:completionHandler:" title="postURL:payload:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">postURL:payload:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform a POST request with a given payload</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMNetRequestOperation *)postURL:(NSURL *)<em>URL</em> payload:(id)<em>payload</em> completionHandler:(void ( ^ ) ( NSURLResponse *, NSData *, NSError *))<em>handler</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The URL to POST to</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>payload</em></dt>
+			<dd><p>The data to be POSTed. Supported types are NSDictionary, NSData, NSString and NSInputStream</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handler</em></dt>
+			<dd><p>The block to be called with response data</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A cancellable <a href="../Classes/DMNetRequestOperation.html">DMNetRequestOperation</a> setup and queued in the current network queue.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform a POST request with a given payload</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMNetworking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postURL:payload:headers:completionHandler:" title="postURL:payload:headers:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">postURL:payload:headers:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform a POST request with a given payload and some custom additional headers</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMNetRequestOperation *)postURL:(NSURL *)<em>URL</em> payload:(id)<em>payload</em> headers:(NSDictionary *)<em>headers</em> completionHandler:(void ( ^ ) ( NSURLResponse *, NSData *, NSError *))<em>handler</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The URL to POST to</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>payload</em></dt>
+			<dd><p>The data to be POSTed. Supported types are NSDictionary, NSData, NSString and NSInputStream</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>headers</em></dt>
+			<dd><p>A dictionnary of custom headers for the request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handler</em></dt>
+			<dd><p>The block to be called with response data</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A cancellable <a href="../Classes/DMNetRequestOperation.html">DMNetRequestOperation</a> setup and queued in the current network queue.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform a POST request with a given payload and some custom additional headers</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMNetworking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/putURL:payload:completionHandler:" title="putURL:payload:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">putURL:payload:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform a PUT request with a given payload</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMNetRequestOperation *)putURL:(NSURL *)<em>URL</em> payload:(id)<em>payload</em> completionHandler:(void ( ^ ) ( NSURLResponse *, NSData *, NSError *))<em>handler</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The URL to PUT to</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>payload</em></dt>
+			<dd><p>The data to be PUTed. Supported types are NSDictionary, NSData, NSString and NSInputStream</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handler</em></dt>
+			<dd><p>The block to be called with response data</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A cancellable <a href="../Classes/DMNetRequestOperation.html">DMNetRequestOperation</a> setup and queued in the current network queue.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform a PUT request with a given payload</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMNetworking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/putURL:payload:headers:completionHandler:" title="putURL:payload:headers:completionHandler:"></a>
+	<h3 class="subsubtitle method-title">putURL:payload:headers:completionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform a PUT request with a given payload and some custom additional headers</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMNetRequestOperation *)putURL:(NSURL *)<em>URL</em> payload:(id)<em>payload</em> headers:(NSDictionary *)<em>headers</em> completionHandler:(void ( ^ ) ( NSURLResponse *, NSData *, NSError *))<em>handler</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URL</em></dt>
+			<dd><p>The URL to PUT to</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>payload</em></dt>
+			<dd><p>The data to be PUTed. Supported types are NSDictionary, NSData, NSString and NSInputStream</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>headers</em></dt>
+			<dd><p>A dictionnary of custom headers for the request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handler</em></dt>
+			<dd><p>The block to be called with response data</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A cancellable <a href="../Classes/DMNetRequestOperation.html">DMNetRequestOperation</a> setup and queued in the current network queue.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform a PUT request with a given payload and some custom additional headers</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMNetworking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Dailymotion S.A. All rights reserved. (Last updated: 2012-10-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 737)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

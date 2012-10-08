@@ -1,0 +1,1874 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>DMAPI Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 737)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Dailymotion SDK </a></h1>
+				<a id="developerHome" href="../index.html">Dailymotion S.A</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">DMAPI Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/currentReachabilityStatus">&nbsp;&nbsp;&nbsp;&nbsp;currentReachabilityStatus</option>
+	
+	<option value="//api/name/maxAggregatedCallCount">&nbsp;&nbsp;&nbsp;&nbsp;maxAggregatedCallCount</option>
+	
+	<option value="//api/name/maxConcurrency">&nbsp;&nbsp;&nbsp;&nbsp;maxConcurrency</option>
+	
+	<option value="//api/name/oauth">&nbsp;&nbsp;&nbsp;&nbsp;oauth</option>
+	
+	<option value="//api/name/timeout">&nbsp;&nbsp;&nbsp;&nbsp;timeout</option>
+	
+	<option value="//api/name/uploadChunkSize">&nbsp;&nbsp;&nbsp;&nbsp;uploadChunkSize</option>
+	
+	<option value="//api/name/version">&nbsp;&nbsp;&nbsp;&nbsp;version</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/sharedAPI">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedAPI</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/delete:args:callback:">&nbsp;&nbsp;&nbsp;&nbsp;- delete:args:callback:</option>
+	
+	<option value="//api/name/delete:callback:">&nbsp;&nbsp;&nbsp;&nbsp;- delete:callback:</option>
+	
+	<option value="//api/name/get:args:cacheInfo:callback:">&nbsp;&nbsp;&nbsp;&nbsp;- get:args:cacheInfo:callback:</option>
+	
+	<option value="//api/name/get:args:callback:">&nbsp;&nbsp;&nbsp;&nbsp;- get:args:callback:</option>
+	
+	<option value="//api/name/get:callback:">&nbsp;&nbsp;&nbsp;&nbsp;- get:callback:</option>
+	
+	<option value="//api/name/itemCollectionWithType:forParams:">&nbsp;&nbsp;&nbsp;&nbsp;- itemCollectionWithType:forParams:</option>
+	
+	<option value="//api/name/itemWithType:forId:">&nbsp;&nbsp;&nbsp;&nbsp;- itemWithType:forId:</option>
+	
+	<option value="//api/name/logout">&nbsp;&nbsp;&nbsp;&nbsp;- logout</option>
+	
+	<option value="//api/name/player:params:">&nbsp;&nbsp;&nbsp;&nbsp;- player:params:</option>
+	
+	<option value="//api/name/post:args:callback:">&nbsp;&nbsp;&nbsp;&nbsp;- post:args:callback:</option>
+	
+	<option value="//api/name/post:callback:">&nbsp;&nbsp;&nbsp;&nbsp;- post:callback:</option>
+	
+	<option value="//api/name/removeGlobalParameter:">&nbsp;&nbsp;&nbsp;&nbsp;- removeGlobalParameter:</option>
+	
+	<option value="//api/name/resumeFileUploadOperation:withCompletionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- resumeFileUploadOperation:withCompletionHandler:</option>
+	
+	<option value="//api/name/setValue:forGlobalParameter:">&nbsp;&nbsp;&nbsp;&nbsp;- setValue:forGlobalParameter:</option>
+	
+	<option value="//api/name/uploadFileURL:withCompletionHandler:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadFileURL:withCompletionHandler:</option>
+	
+	<option value="//api/name/valueForGlobalParameter:">&nbsp;&nbsp;&nbsp;&nbsp;- valueForGlobalParameter:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties">Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Global Settings">Global Settings</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Global Parameters">Global Parameters</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Performing API Requests">Performing API Requests</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Uploading Files">Uploading Files</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Instanciating Player">Instanciating Player</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Authentication">Authentication</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Item Methods">Item Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentReachabilityStatus">currentReachabilityStatus</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxAggregatedCallCount">maxAggregatedCallCount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxConcurrency">maxConcurrency</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/oauth">oauth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timeout">timeout</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadChunkSize">uploadChunkSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/version">version</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedAPI">sharedAPI</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delete:args:callback:">delete:args:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delete:callback:">delete:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/get:args:cacheInfo:callback:">get:args:cacheInfo:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/get:args:callback:">get:args:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/get:callback:">get:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemCollectionWithType:forParams:">itemCollectionWithType:forParams:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemWithType:forId:">itemWithType:forId:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logout">logout</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/player:params:">player:params:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/post:args:callback:">post:args:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/post:callback:">post:callback:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeGlobalParameter:">removeGlobalParameter:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resumeFileUploadOperation:withCompletionHandler:">resumeFileUploadOperation:withCompletionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setValue:forGlobalParameter:">setValue:forGlobalParameter:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadFileURL:withCompletionHandler:">uploadFileURL:withCompletionHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/valueForGlobalParameter:">valueForGlobalParameter:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="DMAPI Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">DMAPI Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">DMAPI.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Low level access to the API. This object can be used to perform direct API request. It is thus recommanded
+to use higher level objects like <a href="../Classes/DMItem.html">DMItem</a> and <a href="../Classes/DMItemCollection.html">DMItemCollection</a> or UIKit data sources like DMTableViewDataSource
+and friends.</p>
+
+<p><a href="DMAPI.html">DMAPI</a> doesn&rsquo;t handle caching, use <a href="../Classes/DMItem.html">DMItem</a> and <a href="../Classes/DMItemCollection.html">DMItemCollection</a> if you need caching.</p>
+
+<p><a href="DMAPI.html">DMAPI</a> will automatically aggregate calls to the API performed in the same run loop tic. It can aggregate up to
+10 calls in a single request. This is a huge performance boost, especially for mobile network on which the
+allowed number of concurrent network connections is very very low. Although, it can lead to unwanted behavior
+as response won&rsquo;t be return until all requests have been treated by the server.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedAPI">+&nbsp;sharedAPI</a></code>
+		<span class="tooltip"><p>Get the shared DM API instance for the current application.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Properties" name="task_Properties"></a>
+						<h3 class="subsubtitle task-title">Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/version">&nbsp;&nbsp;version</a></code>
+		<span class="tooltip"><p>Dailymotion SDK Version</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentReachabilityStatus">&nbsp;&nbsp;currentReachabilityStatus</a></code>
+		<span class="tooltip"><p>Report the current reachability of the API. You may use KVO to react to reachability changes.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Global Settings" name="task_Global Settings"></a>
+						<h3 class="subsubtitle task-title">Global Settings</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/timeout">&nbsp;&nbsp;timeout</a></code>
+		<span class="tooltip"><p>Global <a href="#//api/name/timeout">timeout</a> interval for API requests</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maxConcurrency">&nbsp;&nbsp;maxConcurrency</a></code>
+		<span class="tooltip"><p>Maximum number of allowed concurrent API calls. By default, this property is automatically
+managed regarding current network type (Wifi > 3G/Edge). Changing this value manually will
+disable the automatic management.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadChunkSize">&nbsp;&nbsp;uploadChunkSize</a></code>
+		<span class="tooltip"><p>The size of upload chunk size for resumable uploads. By default, this property is automatically
+managed regarding current network type (Wifi > 3G/Edge). Changing this value manually will
+disable the automatic management.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maxAggregatedCallCount">&nbsp;&nbsp;maxAggregatedCallCount</a></code>
+		<span class="tooltip"><p>Maximum number of call allowed to be batched in a single request. The hard API limit is 10
+and default value is 10 as well.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Global Parameters" name="task_Global Parameters"></a>
+						<h3 class="subsubtitle task-title">Global Parameters</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setValue:forGlobalParameter:">&ndash;&nbsp;setValue:forGlobalParameter:</a></code>
+		<span class="tooltip"><p>Set a parameter that will be sent with all API calls like for instance <code>localization</code> and
+<code>family_filter</code> parameters.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeGlobalParameter:">&ndash;&nbsp;removeGlobalParameter:</a></code>
+		<span class="tooltip"><p>Remove the specified global parameter.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/valueForGlobalParameter:">&ndash;&nbsp;valueForGlobalParameter:</a></code>
+		<span class="tooltip"><p>Get the specified global parameter.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Performing API Requests" name="task_Performing API Requests"></a>
+						<h3 class="subsubtitle task-title">Performing API Requests</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/get:callback:">&ndash;&nbsp;get:callback:</a></code>
+		<span class="tooltip"><p>Perform a GET request to Dailymotion&rsquo;s API with the given method name and arguments.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/post:callback:">&ndash;&nbsp;post:callback:</a></code>
+		<span class="tooltip"><p>Perform a POST request to Dailymotion&rsquo;s API with the given method name and arguments.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delete:callback:">&ndash;&nbsp;delete:callback:</a></code>
+		<span class="tooltip"><p>Perform a DELETE request to Dailymotion&rsquo;s API with the given method name and arguments.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/get:args:callback:">&ndash;&nbsp;get:args:callback:</a></code>
+		<span class="tooltip"><p>Perform a GET request to Dailymotion&rsquo;s API with the given method name and arguments.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/post:args:callback:">&ndash;&nbsp;post:args:callback:</a></code>
+		<span class="tooltip"><p>Perform a POST request to Dailymotion&rsquo;s API with the given method name and arguments.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delete:args:callback:">&ndash;&nbsp;delete:args:callback:</a></code>
+		<span class="tooltip"><p>Perform a DELETE request to Dailymotion&rsquo;s API with the given method name and arguments.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/get:args:cacheInfo:callback:">&ndash;&nbsp;get:args:cacheInfo:callback:</a></code>
+		<span class="tooltip"><p>Perform a conditional GET request to Dailymotion&rsquo;s API with the given method name and arguments.
+If the provided cache info is still fresh, callback is called with no result and a new cache info object.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Uploading Files" name="task_Uploading Files"></a>
+						<h3 class="subsubtitle task-title">Uploading Files</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadFileURL:withCompletionHandler:">&ndash;&nbsp;uploadFileURL:withCompletionHandler:</a></code>
+		<span class="tooltip"><p>Upload a file to Dailymotion and generate an URL to be used by API fields requiring a file URL like <code>POST /me/videos</code> <code>url</code> field.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resumeFileUploadOperation:withCompletionHandler:">&ndash;&nbsp;resumeFileUploadOperation:withCompletionHandler:</a></code>
+		<span class="tooltip"><p>Resume an unfinished upload</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Instanciating Player" name="task_Instanciating Player"></a>
+						<h3 class="subsubtitle task-title">Instanciating Player</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/player:params:">&ndash;&nbsp;player:params:</a></code>
+		<span class="tooltip"><p>Create a DailymtionPlayer object initialized with the specified video ID.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Authentication" name="task_Authentication"></a>
+						<h3 class="subsubtitle task-title">Authentication</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/oauth">&nbsp;&nbsp;oauth</a></code>
+		<span class="tooltip"><p>The <a href="../Classes/DMOAuthClient.html">DMOAuthClient</a> object responsible for API authentication. You may have to set a delegate
+and call the <code>setGrantType:withAPIKey:secret:scope:</code> method on this object if you want to
+make authenticated API request.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logout">&ndash;&nbsp;logout</a></code>
+		<span class="tooltip"><p>Remove the right for the current API key to access the current user account.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Item Methods" name="task_Item Methods"></a>
+						<h3 class="subsubtitle task-title">Item Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemWithType:forId:">&ndash;&nbsp;itemWithType:forId:</a></code>
+		<span class="tooltip"><p>Get an instance of <a href="../Classes/DMItem.html">DMItem</a> for a given object type/id</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemCollectionWithType:forParams:">&ndash;&nbsp;itemCollectionWithType:forParams:</a></code>
+		<span class="tooltip"><p>Get an instance of <a href="../Classes/DMItemCollection.html">DMItemCollection</a> for a given type/params</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/currentReachabilityStatus" title="currentReachabilityStatus"></a>
+	<h3 class="subsubtitle method-title">currentReachabilityStatus</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Report the current reachability of the API. You may use KVO to react to reachability changes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) DMNetworkStatus currentReachabilityStatus</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Report the current reachability of the API. You may use KVO to react to reachability changes.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maxAggregatedCallCount" title="maxAggregatedCallCount"></a>
+	<h3 class="subsubtitle method-title">maxAggregatedCallCount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Maximum number of call allowed to be batched in a single request. The hard API limit is 10
+and default value is 10 as well.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSUInteger maxAggregatedCallCount</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Maximum number of call allowed to be batched in a single request. The hard API limit is 10
+and default value is 10 as well.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maxConcurrency" title="maxConcurrency"></a>
+	<h3 class="subsubtitle method-title">maxConcurrency</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Maximum number of allowed concurrent API calls. By default, this property is automatically
+managed regarding current network type (Wifi > 3G/Edge). Changing this value manually will
+disable the automatic management.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSUInteger maxConcurrency</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Maximum number of allowed concurrent API calls. By default, this property is automatically
+managed regarding current network type (Wifi > 3G/Edge). Changing this value manually will
+disable the automatic management.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/oauth" title="oauth"></a>
+	<h3 class="subsubtitle method-title">oauth</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="../Classes/DMOAuthClient.html">DMOAuthClient</a> object responsible for API authentication. You may have to set a delegate
+and call the <code>setGrantType:withAPIKey:secret:scope:</code> method on this object if you want to
+make authenticated API request.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) DMOAuthClient *oauth</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The <a href="../Classes/DMOAuthClient.html">DMOAuthClient</a> object responsible for API authentication. You may have to set a delegate
+and call the <code>setGrantType:withAPIKey:secret:scope:</code> method on this object if you want to
+make authenticated API request.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/DMOAuthClient.html">DMOAuthClient</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/timeout" title="timeout"></a>
+	<h3 class="subsubtitle method-title">timeout</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Global <a href="#//api/name/timeout">timeout</a> interval for API requests</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSTimeInterval timeout</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Global <a href="#//api/name/timeout">timeout</a> interval for API requests</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadChunkSize" title="uploadChunkSize"></a>
+	<h3 class="subsubtitle method-title">uploadChunkSize</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The size of upload chunk size for resumable uploads. By default, this property is automatically
+managed regarding current network type (Wifi > 3G/Edge). Changing this value manually will
+disable the automatic management.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSUInteger uploadChunkSize</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The size of upload chunk size for resumable uploads. By default, this property is automatically
+managed regarding current network type (Wifi > 3G/Edge). Changing this value manually will
+disable the automatic management.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/version" title="version"></a>
+	<h3 class="subsubtitle method-title">version</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Dailymotion SDK Version</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *version</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Dailymotion SDK Version</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedAPI" title="sharedAPI"></a>
+	<h3 class="subsubtitle method-title">sharedAPI</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the shared DM API instance for the current application.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (DMAPI *)sharedAPI</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the shared DM API instance for the current application.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/delete:args:callback:" title="delete:args:callback:"></a>
+	<h3 class="subsubtitle method-title">delete:args:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform a DELETE request to Dailymotion&rsquo;s API with the given method name and arguments.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMAPICall *)delete:(NSString *)<em>path</em> args:(NSDictionary *)<em>args</em> callback:(DMAPICallResultBlock)<em>callback</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>An API resource</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>args</em></dt>
+			<dd><p>An NSDictionnary with key-value pairs containing arguments</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callback</em></dt>
+			<dd><p>A block taking the response as first argument and an error as second argument</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform a DELETE request to Dailymotion&rsquo;s API with the given method name and arguments.</p>
+
+<p>See <code>Dailymotion API reference </code>http://www.dailymotion.com/doc/api/reference.html<code></code>_</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delete:callback:" title="delete:callback:"></a>
+	<h3 class="subsubtitle method-title">delete:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform a DELETE request to Dailymotion&rsquo;s API with the given method name and arguments.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMAPICall *)delete:(NSString *)<em>path</em> callback:(DMAPICallResultBlock)<em>callback</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>An API resource</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callback</em></dt>
+			<dd><p>A block taking the response as first argument and an error as second argument</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform a DELETE request to Dailymotion&rsquo;s API with the given method name and arguments.</p>
+
+<p>See <code>Dailymotion API reference </code>http://www.dailymotion.com/doc/api/reference.html<code></code>_</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/get:args:cacheInfo:callback:" title="get:args:cacheInfo:callback:"></a>
+	<h3 class="subsubtitle method-title">get:args:cacheInfo:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform a conditional GET request to Dailymotion&rsquo;s API with the given method name and arguments.
+If the provided cache info is still fresh, callback is called with no result and a new cache info object.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMAPICall *)get:(NSString *)<em>path</em> args:(NSDictionary *)<em>args</em> cacheInfo:(DMAPICacheInfo *)<em>cacheInfo</em> callback:(DMAPICallResultBlock)<em>callback</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>An API resource</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>args</em></dt>
+			<dd><p>An NSDictionnary with key-value pairs containing arguments</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cacheInfo</em></dt>
+			<dd><p>The cache info used to perform the conditional request</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callback</em></dt>
+			<dd><p>A block taking the response as first argument and an error as second argument</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform a conditional GET request to Dailymotion&rsquo;s API with the given method name and arguments.
+If the provided cache info is still fresh, callback is called with no result and a new cache info object.</p>
+
+<p>See <code>Dailymotion API reference </code>http://www.dailymotion.com/doc/api/reference.html<code></code>_</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/get:args:callback:" title="get:args:callback:"></a>
+	<h3 class="subsubtitle method-title">get:args:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform a GET request to Dailymotion&rsquo;s API with the given method name and arguments.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMAPICall *)get:(NSString *)<em>path</em> args:(NSDictionary *)<em>args</em> callback:(DMAPICallResultBlock)<em>callback</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>An API resource</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>args</em></dt>
+			<dd><p>An NSDictionnary with key-value pairs containing arguments</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callback</em></dt>
+			<dd><p>A block taking the response as first argument and an error as second argument</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform a GET request to Dailymotion&rsquo;s API with the given method name and arguments.</p>
+
+<p>See <code>Dailymotion API reference </code>http://www.dailymotion.com/doc/api/reference.html<code></code>_</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/get:callback:" title="get:callback:"></a>
+	<h3 class="subsubtitle method-title">get:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform a GET request to Dailymotion&rsquo;s API with the given method name and arguments.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMAPICall *)get:(NSString *)<em>path</em> callback:(DMAPICallResultBlock)<em>callback</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>An API resource</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callback</em></dt>
+			<dd><p>A block taking the response as first argument and an error as second argument</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform a GET request to Dailymotion&rsquo;s API with the given method name and arguments.</p>
+
+<p>See <code>Dailymotion API reference </code>http://www.dailymotion.com/doc/api/reference.html<code></code>_</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itemCollectionWithType:forParams:" title="itemCollectionWithType:forParams:"></a>
+	<h3 class="subsubtitle method-title">itemCollectionWithType:forParams:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get an instance of <a href="../Classes/DMItemCollection.html">DMItemCollection</a> for a given type/params</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMItemCollection *)itemCollectionWithType:(NSString *)<em>type</em> forParams:(NSDictionary *)<em>params</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The item type name (i.e.: video, user, playlist)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>params</em></dt>
+			<dd><p>Parameters to filter or sort the result</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get an instance of <a href="../Classes/DMItemCollection.html">DMItemCollection</a> for a given type/params</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/DMItemCollection.html">DMItemCollection</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itemWithType:forId:" title="itemWithType:forId:"></a>
+	<h3 class="subsubtitle method-title">itemWithType:forId:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get an instance of <a href="../Classes/DMItem.html">DMItem</a> for a given object type/id</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMItem *)itemWithType:(NSString *)<em>type</em> forId:(NSString *)<em>itemId</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The item type name</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>itemId</em></dt>
+			<dd><p>The item id</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get an instance of <a href="../Classes/DMItem.html">DMItem</a> for a given object type/id</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/DMItem.html">DMItem</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logout" title="logout"></a>
+	<h3 class="subsubtitle method-title">logout</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove the right for the current API key to access the current user account.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)logout</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Remove the right for the current API key to access the current user account.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/player:params:" title="player:params:"></a>
+	<h3 class="subsubtitle method-title">player:params:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a DailymtionPlayer object initialized with the specified video ID.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMPlayerViewController *)player:(NSString *)<em>video</em> params:(NSDictionary *)<em>params</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>video</em></dt>
+			<dd><p>The Dailymotion video ID that identifies the video that the player will load.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>params</em></dt>
+			<dd><p>A dictionary containing <code>player parameters </code>http://www.dailymotion.com/doc/api/player.html<code>#player-params&gt;</code>_
+that can be used to customize the player.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create a DailymtionPlayer object initialized with the specified video ID.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/post:args:callback:" title="post:args:callback:"></a>
+	<h3 class="subsubtitle method-title">post:args:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform a POST request to Dailymotion&rsquo;s API with the given method name and arguments.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMAPICall *)post:(NSString *)<em>path</em> args:(NSDictionary *)<em>args</em> callback:(DMAPICallResultBlock)<em>callback</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>An API resource</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>args</em></dt>
+			<dd><p>An NSDictionnary with key-value pairs containing arguments</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callback</em></dt>
+			<dd><p>A block taking the response as first argument and an error as second argument</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform a POST request to Dailymotion&rsquo;s API with the given method name and arguments.</p>
+
+<p>See <code>Dailymotion API reference </code>http://www.dailymotion.com/doc/api/reference.html<code></code>_</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/post:callback:" title="post:callback:"></a>
+	<h3 class="subsubtitle method-title">post:callback:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Perform a POST request to Dailymotion&rsquo;s API with the given method name and arguments.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMAPICall *)post:(NSString *)<em>path</em> callback:(DMAPICallResultBlock)<em>callback</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>An API resource</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callback</em></dt>
+			<dd><p>A block taking the response as first argument and an error as second argument</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Perform a POST request to Dailymotion&rsquo;s API with the given method name and arguments.</p>
+
+<p>See <code>Dailymotion API reference </code>http://www.dailymotion.com/doc/api/reference.html<code></code>_</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeGlobalParameter:" title="removeGlobalParameter:"></a>
+	<h3 class="subsubtitle method-title">removeGlobalParameter:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove the specified global parameter.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removeGlobalParameter:(NSString *)<em>name</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The parameter to remove</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Remove the specified global parameter.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resumeFileUploadOperation:withCompletionHandler:" title="resumeFileUploadOperation:withCompletionHandler:"></a>
+	<h3 class="subsubtitle method-title">resumeFileUploadOperation:withCompletionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Resume an unfinished upload</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)resumeFileUploadOperation:(DMAPITransfer *)<em>uploadOperation</em> withCompletionHandler:(void ( ^ ) ( id result , NSError *error ))<em>completionHandler</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>uploadOperation</em></dt>
+			<dd><p>An unfinished upload operation returned by <a href="#//api/name/uploadFileURL:withCompletionHandler:">uploadFileURL:withCompletionHandler:</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>The block to be called once upload is complete</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Resume an unfinished upload</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setValue:forGlobalParameter:" title="setValue:forGlobalParameter:"></a>
+	<h3 class="subsubtitle method-title">setValue:forGlobalParameter:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set a parameter that will be sent with all API calls like for instance <code>localization</code> and
+<code>family_filter</code> parameters.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setValue:(id)<em>value</em> forGlobalParameter:(NSString *)<em>name</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>The parameter value</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The parameter name</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Set a parameter that will be sent with all API calls like for instance <code>localization</code> and
+<code>family_filter</code> parameters.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadFileURL:withCompletionHandler:" title="uploadFileURL:withCompletionHandler:"></a>
+	<h3 class="subsubtitle method-title">uploadFileURL:withCompletionHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Upload a file to Dailymotion and generate an URL to be used by API fields requiring a file URL like <code>POST /me/videos</code> <code>url</code> field.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMAPITransfer *)uploadFileURL:(NSURL *)<em>fileURL</em> withCompletionHandler:(void ( ^ ) ( id result , NSError *error ))<em>completionHandler</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fileURL</em></dt>
+			<dd><p>The URL path to the file to upload</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionHandler</em></dt>
+			<dd><p>The block to be called once upload is complete</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Upload a file to Dailymotion and generate an URL to be used by API fields requiring a file URL like <code>POST /me/videos</code> <code>url</code> field.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/valueForGlobalParameter:" title="valueForGlobalParameter:"></a>
+	<h3 class="subsubtitle method-title">valueForGlobalParameter:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get the specified global parameter.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)valueForGlobalParameter:(NSString *)<em>name</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The parameter to get</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get the specified global parameter.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Dailymotion S.A. All rights reserved. (Last updated: 2012-10-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 737)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

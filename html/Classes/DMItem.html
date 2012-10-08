@@ -1,0 +1,1189 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>DMItem Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 737)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Dailymotion SDK </a></h1>
+				<a id="developerHome" href="../index.html">Dailymotion S.A</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">DMItem Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/api">&nbsp;&nbsp;&nbsp;&nbsp;api</option>
+	
+	<option value="//api/name/cacheInfo">&nbsp;&nbsp;&nbsp;&nbsp;cacheInfo</option>
+	
+	<option value="//api/name/cachedFields">&nbsp;&nbsp;&nbsp;&nbsp;cachedFields</option>
+	
+	<option value="//api/name/itemId">&nbsp;&nbsp;&nbsp;&nbsp;itemId</option>
+	
+	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;type</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/itemWithType:forId:">&nbsp;&nbsp;&nbsp;&nbsp;+ itemWithType:forId:</option>
+	
+	<option value="//api/name/itemWithType:forId:fromAPI:">&nbsp;&nbsp;&nbsp;&nbsp;+ itemWithType:forId:fromAPI:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/areFieldsCached:">&nbsp;&nbsp;&nbsp;&nbsp;- areFieldsCached:</option>
+	
+	<option value="//api/name/editWithData:done:">&nbsp;&nbsp;&nbsp;&nbsp;- editWithData:done:</option>
+	
+	<option value="//api/name/flushCache">&nbsp;&nbsp;&nbsp;&nbsp;- flushCache</option>
+	
+	<option value="//api/name/itemCollectionWithConnection:ofType:">&nbsp;&nbsp;&nbsp;&nbsp;- itemCollectionWithConnection:ofType:</option>
+	
+	<option value="//api/name/itemCollectionWithConnection:ofType:withParams:">&nbsp;&nbsp;&nbsp;&nbsp;- itemCollectionWithConnection:ofType:withParams:</option>
+	
+	<option value="//api/name/subItemWithType:forField:done:">&nbsp;&nbsp;&nbsp;&nbsp;- subItemWithType:forField:done:</option>
+	
+	<option value="//api/name/withFields:do:">&nbsp;&nbsp;&nbsp;&nbsp;- withFields:do:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a DMItem Instance">Creating a DMItem Instance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties">Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Reading and Writing Item Fields">Reading and Writing Item Fields</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Cache">Managing Cache</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/api">api</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cacheInfo">cacheInfo</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cachedFields">cachedFields</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemId">itemId</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemWithType:forId:">itemWithType:forId:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemWithType:forId:fromAPI:">itemWithType:forId:fromAPI:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/areFieldsCached:">areFieldsCached:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editWithData:done:">editWithData:done:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flushCache">flushCache</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemCollectionWithConnection:ofType:">itemCollectionWithConnection:ofType:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemCollectionWithConnection:ofType:withParams:">itemCollectionWithConnection:ofType:withParams:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/subItemWithType:forField:done:">subItemWithType:forField:done:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/withFields:do:">withFields:do:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="DMItem Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">DMItem Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSCoding</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">DMItem.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A kind of ORM for Dailymotion remote objects. This class handles API calls, caching of results, cache invalidation etc.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating a DMItem Instance" name="task_Creating a DMItem Instance"></a>
+						<h3 class="subsubtitle task-title">Creating a DMItem Instance</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemWithType:forId:fromAPI:">+&nbsp;itemWithType:forId:fromAPI:</a></code>
+		<span class="tooltip"><p>Get an <a href="DMItem.html">DMItem</a> for a given object name (i.e.: video, user, playlist) and an object id</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemWithType:forId:">+&nbsp;itemWithType:forId:</a></code>
+		<span class="tooltip"><p>Get an <a href="DMItem.html">DMItem</a> for a given object name (i.e.: video, user, playlist) and an object id</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemCollectionWithConnection:ofType:withParams:">&ndash;&nbsp;itemCollectionWithConnection:ofType:withParams:</a></code>
+		<span class="tooltip"><p>Get an instance of <a href="../Classes/DMItemCollection.html">DMItemCollection</a> of a given connection to the item</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemCollectionWithConnection:ofType:">&ndash;&nbsp;itemCollectionWithConnection:ofType:</a></code>
+		<span class="tooltip"><p>Get an instance of <a href="../Classes/DMItemCollection.html">DMItemCollection</a> of a given connection to the item</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Properties" name="task_Properties"></a>
+						<h3 class="subsubtitle task-title">Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
+		<span class="tooltip"><p>The item <a href="#//api/name/type">type</a> (ie: video, comment, user)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemId">&nbsp;&nbsp;itemId</a></code>
+		<span class="tooltip"><p>The item id</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cacheInfo">&nbsp;&nbsp;cacheInfo</a></code>
+		<span class="tooltip"><p>Current cache info for the item</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/api">&nbsp;&nbsp;api</a></code>
+		<span class="tooltip"><p>The underlaying <a href="../Classes/DMAPI.html">DMAPI</a> instance</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cachedFields">&nbsp;&nbsp;cachedFields</a></code>
+		<span class="tooltip"><p>Cached fields</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Reading and Writing Item Fields" name="task_Reading and Writing Item Fields"></a>
+						<h3 class="subsubtitle task-title">Reading and Writing Item Fields</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/withFields:do:">&ndash;&nbsp;withFields:do:</a></code>
+		<span class="tooltip"><p>Load some fields from either API or cache and callback the passed block with the fields data</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editWithData:done:">&ndash;&nbsp;editWithData:done:</a></code>
+		<span class="tooltip"><p>Edit some item fields</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Cache" name="task_Managing Cache"></a>
+						<h3 class="subsubtitle task-title">Managing Cache</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/areFieldsCached:">&ndash;&nbsp;areFieldsCached:</a></code>
+		<span class="tooltip"><p>Test if fields are present in the cache</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flushCache">&ndash;&nbsp;flushCache</a></code>
+		<span class="tooltip"><p>Flush all previously loaded cache for this item</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/subItemWithType:forField:done:">&ndash;&nbsp;subItemWithType:forField:done:</a></code>
+		<span class="tooltip"><p>Get a <a href="DMItem.html">DMItem</a> from an object field</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/api" title="api"></a>
+	<h3 class="subsubtitle method-title">api</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The underlaying <a href="../Classes/DMAPI.html">DMAPI</a> instance</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) DMAPI *api</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The underlaying <a href="../Classes/DMAPI.html">DMAPI</a> instance</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cacheInfo" title="cacheInfo"></a>
+	<h3 class="subsubtitle method-title">cacheInfo</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Current cache info for the item</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) DMAPICacheInfo *cacheInfo</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Current cache info for the item</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cachedFields" title="cachedFields"></a>
+	<h3 class="subsubtitle method-title">cachedFields</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cached fields</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSDictionary *cachedFields</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Cached fields</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itemId" title="itemId"></a>
+	<h3 class="subsubtitle method-title">itemId</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The item id</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *itemId</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The item id</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="subsubtitle method-title">type</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The item <a href="#//api/name/type">type</a> (ie: video, comment, user)</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *type</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The item <a href="#//api/name/type">type</a> (ie: video, comment, user)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/itemWithType:forId:" title="itemWithType:forId:"></a>
+	<h3 class="subsubtitle method-title">itemWithType:forId:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get an <a href="DMItem.html">DMItem</a> for a given object name (i.e.: video, user, playlist) and an object id</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (DMItem *)itemWithType:(NSString *)<em>type</em> forId:(NSString *)<em>itemId</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The item <a href="#//api/name/type">type</a> name</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>itemId</em></dt>
+			<dd><p>The item id</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A shared instance of <a href="DMItem.html">DMItem</a> for the requested object</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get an <a href="DMItem.html">DMItem</a> for a given object name (i.e.: video, user, playlist) and an object id</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itemWithType:forId:fromAPI:" title="itemWithType:forId:fromAPI:"></a>
+	<h3 class="subsubtitle method-title">itemWithType:forId:fromAPI:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get an <a href="DMItem.html">DMItem</a> for a given object name (i.e.: video, user, playlist) and an object id</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (DMItem *)itemWithType:(NSString *)<em>type</em> forId:(NSString *)<em>itemId</em> fromAPI:(DMAPI *)<em>api</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The item <a href="#//api/name/type">type</a> name</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>itemId</em></dt>
+			<dd><p>The item id</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>api</em></dt>
+			<dd><p>The <a href="../Classes/DMAPI.html">DMAPI</a> object to use to retrieve item data</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A shared instance of <a href="DMItem.html">DMItem</a> for the requested object</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get an <a href="DMItem.html">DMItem</a> for a given object name (i.e.: video, user, playlist) and an object id</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/areFieldsCached:" title="areFieldsCached:"></a>
+	<h3 class="subsubtitle method-title">areFieldsCached:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Test if fields are present in the cache</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)areFieldsCached:(NSArray *)<em>fields</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fields</em></dt>
+			<dd><p>A list of object fields names to test</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Test if fields are present in the cache</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/editWithData:done:" title="editWithData:done:"></a>
+	<h3 class="subsubtitle method-title">editWithData:done:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Edit some item fields</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMItemOperation *)editWithData:(NSDictionary *)<em>data</em> done:(void ( ^ ) ( NSError *error ))<em>callback</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>A dictionary containing fields to modify with their new value</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callback</em></dt>
+			<dd><p>The block to call when operation is completed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <a href="../Classes/DMItemOperation.html">DMItemOperation</a> instance able to cancel the request</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Edit some item fields</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flushCache" title="flushCache"></a>
+	<h3 class="subsubtitle method-title">flushCache</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Flush all previously loaded cache for this item</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)flushCache</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Flush all previously loaded cache for this item</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itemCollectionWithConnection:ofType:" title="itemCollectionWithConnection:ofType:"></a>
+	<h3 class="subsubtitle method-title">itemCollectionWithConnection:ofType:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get an instance of <a href="../Classes/DMItemCollection.html">DMItemCollection</a> of a given connection to the item</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMItemCollection *)itemCollectionWithConnection:(NSString *)<em>connection</em> ofType:(NSString *)<em>type</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>connection</em></dt>
+			<dd><p>The name of the item&rsquo;s connection (i.e.: videos, playlists, feed)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The connection <a href="#//api/name/type">type</a> name</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get an instance of <a href="../Classes/DMItemCollection.html">DMItemCollection</a> of a given connection to the item</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/DMItemCollection.html">DMItemCollection</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itemCollectionWithConnection:ofType:withParams:" title="itemCollectionWithConnection:ofType:withParams:"></a>
+	<h3 class="subsubtitle method-title">itemCollectionWithConnection:ofType:withParams:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get an instance of <a href="../Classes/DMItemCollection.html">DMItemCollection</a> of a given connection to the item</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMItemCollection *)itemCollectionWithConnection:(NSString *)<em>connection</em> ofType:(NSString *)<em>type</em> withParams:(NSDictionary *)<em>params</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>connection</em></dt>
+			<dd><p>The name of the item&rsquo;s connection (i.e.: videos, playlists, feed)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The connection <a href="#//api/name/type">type</a> name</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>params</em></dt>
+			<dd><p>Optional parameters to filter/sort the result</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get an instance of <a href="../Classes/DMItemCollection.html">DMItemCollection</a> of a given connection to the item</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/DMItemCollection.html">DMItemCollection</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/subItemWithType:forField:done:" title="subItemWithType:forField:done:"></a>
+	<h3 class="subsubtitle method-title">subItemWithType:forField:done:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get a <a href="DMItem.html">DMItem</a> from an object field</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMItemOperation *)subItemWithType:(NSString *)<em>type</em> forField:(NSString *)<em>subItemField</em> done:(void ( ^ ) ( DMItem *item , NSError *error ))<em>callback</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>The <a href="#//api/name/type">type</a> of the sub item</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>subItemField</em></dt>
+			<dd><p>The name of the field holding the sub item</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callback</em></dt>
+			<dd><p>The block to call with the initialized sub item</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <a href="../Classes/DMItemOperation.html">DMItemOperation</a> instance able to cancel the request</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get a <a href="DMItem.html">DMItem</a> from an object field</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/withFields:do:" title="withFields:do:"></a>
+	<h3 class="subsubtitle method-title">withFields:do:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Load some fields from either API or cache and callback the passed block with the fields data</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMItemOperation *)withFields:(NSArray *)<em>fields</em> do:(void ( ^ ) ( NSDictionary *data , BOOL stalled , NSError *error ))<em>callback</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fields</em></dt>
+			<dd><p>A list of object fields names to load</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callback</em></dt>
+			<dd><p>The block to call with resulting field data</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <a href="../Classes/DMItemOperation.html">DMItemOperation</a> instance able to cancel the request</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Load some fields from either API or cache and callback the passed block with the fields data</p>
+
+<p>NOTE: The callback may be called twice if the data was found in the cache but stalled.
+First time, the callback will be returned with <code>stalled</code> parameter to YES and second time
+the <code>stalled</code> parameter will be NO. If some fields are cached and other are missing, the
+a first callback will return all available fields data and stalled flag will be YES.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItem.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Dailymotion S.A. All rights reserved. (Last updated: 2012-10-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 737)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

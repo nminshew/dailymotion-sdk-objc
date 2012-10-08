@@ -1,0 +1,818 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>DMItemTableViewDataSourceDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 737)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Dailymotion SDK </a></h1>
+				<a id="developerHome" href="../index.html">Dailymotion S.A</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">DMItemTableViewDataSourceDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/itemTableViewDataSource:didDeleteCellAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- itemTableViewDataSource:didDeleteCellAtIndexPath:</option>
+	
+	<option value="//api/name/itemTableViewDataSource:didFailWithError:">&nbsp;&nbsp;&nbsp;&nbsp;- itemTableViewDataSource:didFailWithError:</option>
+	
+	<option value="//api/name/itemTableViewDataSource:didLoadCellContentAtIndexPath:withData:">&nbsp;&nbsp;&nbsp;&nbsp;- itemTableViewDataSource:didLoadCellContentAtIndexPath:withData:</option>
+	
+	<option value="//api/name/itemTableViewDataSource:didUpdateWithEstimatedTotalItemsCount:">&nbsp;&nbsp;&nbsp;&nbsp;- itemTableViewDataSource:didUpdateWithEstimatedTotalItemsCount:</option>
+	
+	<option value="//api/name/itemTableViewDataSourceDidChange:">&nbsp;&nbsp;&nbsp;&nbsp;- itemTableViewDataSourceDidChange:</option>
+	
+	<option value="//api/name/itemTableViewDataSourceDidEnterOfflineMode:">&nbsp;&nbsp;&nbsp;&nbsp;- itemTableViewDataSourceDidEnterOfflineMode:</option>
+	
+	<option value="//api/name/itemTableViewDataSourceDidFinishLoadingData:">&nbsp;&nbsp;&nbsp;&nbsp;- itemTableViewDataSourceDidFinishLoadingData:</option>
+	
+	<option value="//api/name/itemTableViewDataSourceDidLeaveOfflineMode:">&nbsp;&nbsp;&nbsp;&nbsp;- itemTableViewDataSourceDidLeaveOfflineMode:</option>
+	
+	<option value="//api/name/itemTableViewDataSourceDidStartLoadingData:">&nbsp;&nbsp;&nbsp;&nbsp;- itemTableViewDataSourceDidStartLoadingData:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemTableViewDataSource:didDeleteCellAtIndexPath:">itemTableViewDataSource:didDeleteCellAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemTableViewDataSource:didFailWithError:">itemTableViewDataSource:didFailWithError:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemTableViewDataSource:didLoadCellContentAtIndexPath:withData:">itemTableViewDataSource:didLoadCellContentAtIndexPath:withData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemTableViewDataSource:didUpdateWithEstimatedTotalItemsCount:">itemTableViewDataSource:didUpdateWithEstimatedTotalItemsCount:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemTableViewDataSourceDidChange:">itemTableViewDataSourceDidChange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemTableViewDataSourceDidEnterOfflineMode:">itemTableViewDataSourceDidEnterOfflineMode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemTableViewDataSourceDidFinishLoadingData:">itemTableViewDataSourceDidFinishLoadingData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemTableViewDataSourceDidLeaveOfflineMode:">itemTableViewDataSourceDidLeaveOfflineMode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemTableViewDataSourceDidStartLoadingData:">itemTableViewDataSourceDidStartLoadingData:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="DMItemTableViewDataSourceDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">DMItemTableViewDataSourceDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">DMItemTableViewDataSource.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The <a href="DMItemTableViewDataSourceDelegate.html">DMItemTableViewDataSourceDelegate</a> protocol defines optional methods for <a href="../Classes/DMItemTableViewDataSource.html">DMItemTableViewDataSource</a> delegates.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemTableViewDataSourceDidChange:">&ndash;&nbsp;itemTableViewDataSourceDidChange:</a></code>
+		<span class="tooltip"><p>Sent when the <a href="../Classes/DMItemCollection.html">DMItemCollection</a> is modified.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemTableViewDataSource:didUpdateWithEstimatedTotalItemsCount:">&ndash;&nbsp;itemTableViewDataSource:didUpdateWithEstimatedTotalItemsCount:</a></code>
+		<span class="tooltip"><p>Sent when the datasource estimated total number of item changed.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemTableViewDataSourceDidStartLoadingData:">&ndash;&nbsp;itemTableViewDataSourceDidStartLoadingData:</a></code>
+		<span class="tooltip"><p>Sent when the data source start to load data from the network.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemTableViewDataSourceDidFinishLoadingData:">&ndash;&nbsp;itemTableViewDataSourceDidFinishLoadingData:</a></code>
+		<span class="tooltip"><p>Sent when the data source finished loading data from the network.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemTableViewDataSource:didLoadCellContentAtIndexPath:withData:">&ndash;&nbsp;itemTableViewDataSource:didLoadCellContentAtIndexPath:withData:</a></code>
+		<span class="tooltip"><p>Sent when the data for a cell has been loaded.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemTableViewDataSource:didDeleteCellAtIndexPath:">&ndash;&nbsp;itemTableViewDataSource:didDeleteCellAtIndexPath:</a></code>
+		<span class="tooltip"><p>Sent when a cell has been deleted.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemTableViewDataSourceDidEnterOfflineMode:">&ndash;&nbsp;itemTableViewDataSourceDidEnterOfflineMode:</a></code>
+		<span class="tooltip"><p>Sent when the underlaying API goes offline either because the device lost its network connectivity
+or if the Dailymotion API aren&rsquo;t reachable for some reason.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemTableViewDataSourceDidLeaveOfflineMode:">&ndash;&nbsp;itemTableViewDataSourceDidLeaveOfflineMode:</a></code>
+		<span class="tooltip"><p>Sent when the network access to the underlaying API is restored.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemTableViewDataSource:didFailWithError:">&ndash;&nbsp;itemTableViewDataSource:didFailWithError:</a></code>
+		<span class="tooltip"><p>Sent when an error occures.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/itemTableViewDataSource:didDeleteCellAtIndexPath:" title="itemTableViewDataSource:didDeleteCellAtIndexPath:"></a>
+	<h3 class="subsubtitle method-title">itemTableViewDataSource:didDeleteCellAtIndexPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent when a cell has been deleted.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)itemTableViewDataSource:(DMItemTableViewDataSource *)<em>dataSource</em> didDeleteCellAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataSource</em></dt>
+			<dd><p>The <a href="../Classes/DMItemTableViewDataSource.html">DMItemTableViewDataSource</a> sending this message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>indexPath</em></dt>
+			<dd><p>The indexPath of the deleted cell.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sent when a cell has been deleted.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItemTableViewDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itemTableViewDataSource:didFailWithError:" title="itemTableViewDataSource:didFailWithError:"></a>
+	<h3 class="subsubtitle method-title">itemTableViewDataSource:didFailWithError:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent when an error occures.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)itemTableViewDataSource:(DMItemTableViewDataSource *)<em>dataSource</em> didFailWithError:(NSError *)<em>error</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataSource</em></dt>
+			<dd><p>The <a href="../Classes/DMItemTableViewDataSource.html">DMItemTableViewDataSource</a> sending this message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>The error</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sent when an error occures.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItemTableViewDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itemTableViewDataSource:didLoadCellContentAtIndexPath:withData:" title="itemTableViewDataSource:didLoadCellContentAtIndexPath:withData:"></a>
+	<h3 class="subsubtitle method-title">itemTableViewDataSource:didLoadCellContentAtIndexPath:withData:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent when the data for a cell has been loaded.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)itemTableViewDataSource:(DMItemTableViewDataSource *)<em>dataSource</em> didLoadCellContentAtIndexPath:(NSIndexPath *)<em>indexPath</em> withData:(NSDictionary *)<em>data</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataSource</em></dt>
+			<dd><p>The <a href="../Classes/DMItemTableViewDataSource.html">DMItemTableViewDataSource</a> sending this message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>indexPath</em></dt>
+			<dd><p>The indexPath of the cell (note: section is always 0).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>The loaded item data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sent when the data for a cell has been loaded.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItemTableViewDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itemTableViewDataSource:didUpdateWithEstimatedTotalItemsCount:" title="itemTableViewDataSource:didUpdateWithEstimatedTotalItemsCount:"></a>
+	<h3 class="subsubtitle method-title">itemTableViewDataSource:didUpdateWithEstimatedTotalItemsCount:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent when the datasource estimated total number of item changed.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)itemTableViewDataSource:(DMItemTableViewDataSource *)<em>dataSource</em> didUpdateWithEstimatedTotalItemsCount:(NSUInteger)<em>estimatedTotalItems</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataSource</em></dt>
+			<dd><p>The <a href="../Classes/DMItemTableViewDataSource.html">DMItemTableViewDataSource</a> sending this message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>estimatedTotalItems</em></dt>
+			<dd><p>The new estimated total number of items.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sent when the datasource estimated total number of item changed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItemTableViewDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itemTableViewDataSourceDidChange:" title="itemTableViewDataSourceDidChange:"></a>
+	<h3 class="subsubtitle method-title">itemTableViewDataSourceDidChange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent when the <a href="../Classes/DMItemCollection.html">DMItemCollection</a> is modified.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)itemTableViewDataSourceDidChange:(DMItemTableViewDataSource *)<em>dataSource</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataSource</em></dt>
+			<dd><p>The <a href="../Classes/DMItemTableViewDataSource.html">DMItemTableViewDataSource</a> sending this message.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sent when the <a href="../Classes/DMItemCollection.html">DMItemCollection</a> is modified.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItemTableViewDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itemTableViewDataSourceDidEnterOfflineMode:" title="itemTableViewDataSourceDidEnterOfflineMode:"></a>
+	<h3 class="subsubtitle method-title">itemTableViewDataSourceDidEnterOfflineMode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent when the underlaying API goes offline either because the device lost its network connectivity
+or if the Dailymotion API aren&rsquo;t reachable for some reason.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)itemTableViewDataSourceDidEnterOfflineMode:(DMItemTableViewDataSource *)<em>dataSource</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataSource</em></dt>
+			<dd><p>The <a href="../Classes/DMItemTableViewDataSource.html">DMItemTableViewDataSource</a> sending this message.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sent when the underlaying API goes offline either because the device lost its network connectivity
+or if the Dailymotion API aren&rsquo;t reachable for some reason.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItemTableViewDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itemTableViewDataSourceDidFinishLoadingData:" title="itemTableViewDataSourceDidFinishLoadingData:"></a>
+	<h3 class="subsubtitle method-title">itemTableViewDataSourceDidFinishLoadingData:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent when the data source finished loading data from the network.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)itemTableViewDataSourceDidFinishLoadingData:(DMItemTableViewDataSource *)<em>dataSource</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataSource</em></dt>
+			<dd><p>The <a href="../Classes/DMItemTableViewDataSource.html">DMItemTableViewDataSource</a> sending this message.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sent when the data source finished loading data from the network.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItemTableViewDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itemTableViewDataSourceDidLeaveOfflineMode:" title="itemTableViewDataSourceDidLeaveOfflineMode:"></a>
+	<h3 class="subsubtitle method-title">itemTableViewDataSourceDidLeaveOfflineMode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent when the network access to the underlaying API is restored.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)itemTableViewDataSourceDidLeaveOfflineMode:(DMItemTableViewDataSource *)<em>dataSource</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataSource</em></dt>
+			<dd><p>The <a href="../Classes/DMItemTableViewDataSource.html">DMItemTableViewDataSource</a> sending this message.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sent when the network access to the underlaying API is restored.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItemTableViewDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itemTableViewDataSourceDidStartLoadingData:" title="itemTableViewDataSourceDidStartLoadingData:"></a>
+	<h3 class="subsubtitle method-title">itemTableViewDataSourceDidStartLoadingData:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sent when the data source start to load data from the network.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)itemTableViewDataSourceDidStartLoadingData:(DMItemTableViewDataSource *)<em>dataSource</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataSource</em></dt>
+			<dd><p>The <a href="../Classes/DMItemTableViewDataSource.html">DMItemTableViewDataSource</a> sending this message.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sent when the data source start to load data from the network.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItemTableViewDataSource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Dailymotion S.A. All rights reserved. (Last updated: 2012-10-09)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 737)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>
