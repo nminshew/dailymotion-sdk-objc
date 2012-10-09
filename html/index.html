@@ -31,6 +31,78 @@
 				</div>
 				<div id="container">
 					
+					<div class="section section-overview index-overview">
+						
+						
+						<p>The Dailymotion SDK allows you to access the Dailymotion API and control the Dailymotion HTML 5 player from Mac OS X or iOS.</p>
+
+<p><em>WARNING</em>: This SDK requires a 5.0 minimum deployement version for iOS.</p>
+
+<h2>UIKit integration</h2>
+
+<p>The easiest way to use the Dailymotion SDK is to use UIKit integration classes. They are high level integration of the Dailymotion API into UIKit components like <code>UITableViewController</code>, <code>UICollectionViewController</code> or <code>UIPageViewController</code>. They handle for you all the boilerplate code for data loading, infinite scrolling pagination, data caching and cache invalidation.</p>
+
+<ul>
+<li>See <a href="Classes/DMItemTableViewController.html">DMItemTableViewController</a> for <code>UITableViewController</code> implementation</li>
+<li>See <a href="Classes/DMItemCollectionViewController.html">DMItemCollectionViewController</a> for <code>UICollectionViewController</code> implementation</li>
+<li>See <a href="Protocols/DMItemPageViewDataSourceDelegate.html">DMItemPageViewDataSourceDelegate</a> for <code>UIPageViewController</code> implementation</li>
+<li>See <a href="Classes/DMItemPickerLabel.html">DMItemPickerLabel</a> for <code>UIPickerLabel</code> implementation</li>
+</ul>
+
+
+<h2>Model Classes</h2>
+
+<p>The <a href="Classes/DMItem.html">DMItem</a> and <a href="Classes/DMItemCollection.html">DMItemCollection</a> high level classes that wrap the <a href="Classes/DMAPI.html">DMAPI</a> class. They perform the correct CRUDL API requests for given remote Dailymotion object and handle the caching and cache invalidation of the returned data.</p>
+
+<p>You should always prefer using those classe over performing raw API calls using <a href="Classes/DMAPI.html">DMAPI</a>.</p>
+
+<h3>Examples</h3>
+
+<p>Gather metadata of a video:</p>
+
+<pre><code>DMItem *video = [DMItem itemWithType:@"video" forId:@"x1k3d"];
+
+[video withFields:@[@"title", @"description", @"owner.screenname"] do:^(NSDictionary *data , BOOL stalled , NSError *error)
+{
+    NSLog(@"Video %@ as title \"%@\" and is owned by \"%@\"", data[@"title"], data[@"owner.screenname"]);
+}];
+</code></pre>
+
+<p>Performing search:</p>
+
+<pre><code>NSDictionary *args = @{@"search": @"a search query", @"sort": @"relevance"};
+DMItemRemoteCollection *searchCollection = [DMItemCollection itemCollectionWithType:@"video" forParams:args];
+[searchCollection itemsWithFields:@[@"id", @"title"] forPage:1 withPageSize:20 do:^(NSArray *items, BOOL more, NSInteger total, BOOL stalled, NSError *error)
+{
+    if (!stalled)
+    {
+        for (NSDictionary *data in items)
+        {
+            NSLog(@"title: %@", data[@"title"]);
+        }
+    }
+}];
+</code></pre>
+
+<p>Gathering public playlist of a given user:</p>
+
+<pre><code>DMItem *user = [DMItem itemWithType:@"user" forId:@"plidujeanzzz"];
+DMItemCollection *playlistCollection = [user itemCollectionWithConnection:@"playlists" ofType:@"playlist"];
+[searchCollection playlistCollection:@[@"id", @"name"] forPage:1 withPageSize:20 do:^(NSArray *items, BOOL more, NSInteger total, BOOL stalled, NSError *error)
+{
+    if (!stalled)
+    {
+        for (NSDictionary *data in items)
+        {
+            NSLog(@"playlit name: %@", data[@"name"]);
+        }
+    }
+}];
+</code></pre>
+						
+						
+					</div>
+					
 					
 					
 					<div class="index-column">
@@ -54,6 +126,8 @@
 							<li><a href="Classes/DMItemOperation.html">DMItemOperation</a></li>
 							
 							<li><a href="Classes/DMItemPageViewDataSource.html">DMItemPageViewDataSource</a></li>
+							
+							<li><a href="Classes/DMItemPickerLabel.html">DMItemPickerLabel</a></li>
 							
 							<li><a href="Classes/DMItemPickerViewComponent.html">DMItemPickerViewComponent</a></li>
 							
