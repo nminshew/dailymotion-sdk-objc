@@ -191,7 +191,7 @@ for instance, an <code>access_token</code> from another source like your own bac
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/autoSaveSession">&nbsp;&nbsp;autoSaveSession</a></code>
-		<span class="tooltip"><p>If this property is set to <code>NO</code>, the <a href="#//api/name/session"><code>session</code></a> won&rsquo;t be stored automatically for latter use. When not stored, your
+		<span class="tooltip"><p>If this property is set to <code>NO</code>, the <a href="#//api/name/session">session</a> won&rsquo;t be stored automatically for latter use. When not stored, your
 application will have to ask end-user to authorize your API key each time you restart your application.
 By default this property is set to <code>YES</code>.</p></span>
 	</span>
@@ -266,7 +266,7 @@ By default this property is set to <code>YES</code>.</p></span>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>If this property is set to <code>NO</code>, the <a href="#//api/name/session"><code>session</code></a> won&rsquo;t be stored automatically for latter use. When not stored, your
+		<p>If this property is set to <code>NO</code>, the <a href="#//api/name/session">session</a> won&rsquo;t be stored automatically for latter use. When not stored, your
 application will have to ask end-user to authorize your API key each time you restart your application.
 By default this property is set to <code>YES</code>.</p>
 	</div>		
@@ -283,7 +283,7 @@ By default this property is set to <code>YES</code>.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>If this property is set to <code>NO</code>, the <a href="#//api/name/session"><code>session</code></a> won&rsquo;t be stored automatically for latter use. When not stored, your
+		<p>If this property is set to <code>NO</code>, the <a href="#//api/name/session">session</a> won&rsquo;t be stored automatically for latter use. When not stored, your
 application will have to ask end-user to authorize your API key each time you restart your application.
 By default this property is set to <code>YES</code>.</p>
 	</div>
@@ -408,7 +408,7 @@ for instance, an <code>access_token</code> from another source like your own bac
 is normaly autmoatically generated using the provided API key/secret. Although, you can manualy set it if you got,
 for instance, an <code>access_token</code> from another source like your own backend.</p>
 
-<p>A <a href="#//api/name/session"><code>session</code></a> is an NSDictionary which can contain any of the following keys:
+<p>A <a href="#//api/name/session">session</a> is an NSDictionary which can contain any of the following keys:
 &ndash; <code>access_token</code>: a token which can be used to access the API
 &ndash; <code>expires</code>: an <code>NSDate</code> which indicates until when the <code>access_token</code> remains valid
 &ndash; <code>refresh_token</code>: a token used to request a new valid <code>access_token</code> without having to ask the end-user again and again
@@ -651,7 +651,7 @@ for instance, an <code>access_token</code> from another source like your own bac
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>grantType</em></dt>
-			<dd><p>Can be one of <code>DailymotionGrantTypeAuthorization</code>, <code>DailymotionGrantTypeClientCredentials</code> or ``DailymotionGrantTypePassword```.</p></dd>
+			<dd><p>Can be one of <code>DailymotionNoGrant</code>, <code>DailymotionGrantTypeAuthorization</code>, <code>DailymotionGrantTypeClientCredentials</code> or <code>DailymotionGrantTypePassword</code>.</p></dd>
 		</dl>
 		
 		<dl class="argument-def parameter-def">
@@ -683,6 +683,21 @@ To specify several scope, separate them with whitespaces.</p></dd>
 		<p>Set the grant type to be used for API requests.</p>
 
 <p>To create an API key/secret pair, go to: <a href="http://www.dailymotion.com/profile/developer">http://www.dailymotion.com/profile/developer</a></p>
+
+<p>Supported grant types are:</p>
+
+<ul>
+<li><code>DailymotionNoGrant</code>: Use this grant type to access the API anonymously.</li>
+<li><code>DailymotionGrantTypeAuthorization</code>: Use this grant type if must want to access the API on the behalf of a user.
+A UIWebView under iOS or a WebView on Mac OS X will be opened with an authorization request page presented to the end-user.
+You need to implement the <a href="../Protocols/DailymotionOAuthDelegate.html">DailymotionOAuthDelegate</a> protocol to use this grant type.</li>
+<li><code>DailymotionGrantTypeClientCredentials</code>: Use this grant type if you don&rsquo;t need to access the API on behalf of a user but still need to
+authenticate with your API key (i.e.: you API key has special rights).</li>
+<li><code>DailymotionGrantTypePassword</code>: If the token grant type doesn’t suits your application workflow, you can request end-user
+credentials and use the password grant type to authenticate requests. Note that you MUST NOT
+store end-user credentials.</li>
+</ul>
+
 	</div>
 	
 	

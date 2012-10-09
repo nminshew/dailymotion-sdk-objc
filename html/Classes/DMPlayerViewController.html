@@ -77,6 +77,20 @@
 	
 	<option value="//api/name/api:arg:">&nbsp;&nbsp;&nbsp;&nbsp;- api:arg:</option>
 	
+	<option value="//api/name/initWithParams:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithParams:</option>
+	
+	<option value="//api/name/initWithVideo:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithVideo:</option>
+	
+	<option value="//api/name/initWithVideo:params:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithVideo:params:</option>
+	
+	<option value="//api/name/load:">&nbsp;&nbsp;&nbsp;&nbsp;- load:</option>
+	
+	<option value="//api/name/pause">&nbsp;&nbsp;&nbsp;&nbsp;- pause</option>
+	
+	<option value="//api/name/play">&nbsp;&nbsp;&nbsp;&nbsp;- play</option>
+	
+	<option value="//api/name/togglePlay">&nbsp;&nbsp;&nbsp;&nbsp;- togglePlay</option>
+	
 	
 	
 </select>
@@ -92,6 +106,16 @@
 
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing a Player">Initializing a Player</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Player Properties">Player Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Controlling Playback">Controlling Playback</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Calling Raw API Methods">Calling Raw API Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Access Delegate">Access Delegate</a></span></li>
 	
 </ul></li>
 
@@ -138,6 +162,20 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/api:">api:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/api:arg:">api:arg:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithParams:">initWithParams:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithVideo:">initWithVideo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithVideo:params:">initWithVideo:params:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/load:">load:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pause">pause</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/play">play</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/togglePlay">togglePlay</a></span></li>
 	
 </ul></li>
 
@@ -192,25 +230,40 @@ easily controlled.</p>
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						
-						
+						<a title="Initializing a Player" name="task_Initializing a Player"></a>
+						<h3 class="subsubtitle task-title">Initializing a Player</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/webBaseURLString">&nbsp;&nbsp;webBaseURLString</a></code>
-		<span class="tooltip"><p>The base URL for the player. Default is <a href="http://www.dailymotion.com.">http://www.dailymotion.com.</a></p></span>
+		<code><a href="#//api/name/initWithParams:">&ndash;&nbsp;initWithParams:</a></code>
+		<span class="tooltip"><p>Initialize a video player with paramsters</p></span>
 	</span>
-	<span class="task-item-suffix">property</span>
+	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
-		<span class="tooltip"><p>The player <a href="#//api/name/delegate">delegate</a> to send player events to.</p></span>
+		<code><a href="#//api/name/initWithVideo:">&ndash;&nbsp;initWithVideo:</a></code>
+		<span class="tooltip"><p>Initialize a video player using a video id</p></span>
 	</span>
-	<span class="task-item-suffix">property</span>
+	
 	
 </li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithVideo:params:">&ndash;&nbsp;initWithVideo:params:</a></code>
+		<span class="tooltip"><p>Initialize a video player using a video id</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Player Properties" name="task_Player Properties"></a>
+						<h3 class="subsubtitle task-title">Player Properties</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/autoplay">&nbsp;&nbsp;autoplay</a></code>
 		<span class="tooltip"><p>Determines whether the media resource plays automatically when available (read-only).</p></span>
@@ -289,6 +342,57 @@ easily controlled.</p>
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/webBaseURLString">&nbsp;&nbsp;webBaseURLString</a></code>
+		<span class="tooltip"><p>The base URL for the player. Default is <a href="http://www.dailymotion.com.">http://www.dailymotion.com.</a></p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Controlling Playback" name="task_Controlling Playback"></a>
+						<h3 class="subsubtitle task-title">Controlling Playback</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/play">&ndash;&nbsp;play</a></code>
+		<span class="tooltip"><p>Start the video playback.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/togglePlay">&ndash;&nbsp;togglePlay</a></code>
+		<span class="tooltip"><p>Toggle the video playback.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pause">&ndash;&nbsp;pause</a></code>
+		<span class="tooltip"><p>Pause the video playback.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/load:">&ndash;&nbsp;load:</a></code>
+		<span class="tooltip"><p>Load another video in the player by specifying its id.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Calling Raw API Methods" name="task_Calling Raw API Methods"></a>
+						<h3 class="subsubtitle task-title">Calling Raw API Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
 		<code><a href="#//api/name/api:arg:">&ndash;&nbsp;api:arg:</a></code>
 		<span class="tooltip"><p>Call player API method. See <code>Player API Reference </code>http://www.dailymotion.com/doc/api/player.html<code>#api-reference&gt;</code> for more info.</p></span>
 	</span>
@@ -300,6 +404,21 @@ easily controlled.</p>
 		<span class="tooltip"><p>Call player API method. See <code>Player API Reference </code>http://www.dailymotion.com/doc/api/player.html<code>#api-reference&gt;</code> for more info.</p></span>
 	</span>
 	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Access Delegate" name="task_Access Delegate"></a>
+						<h3 class="subsubtitle task-title">Access Delegate</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		<span class="tooltip"><p>The player <a href="#//api/name/delegate">delegate</a> to send player events to.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
 	
 </li>
 						</ul>
@@ -918,6 +1037,326 @@ easily controlled.</p>
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>Call player API method. See <code>Player API Reference </code>http://www.dailymotion.com/doc/api/player.html<code>#api-reference&gt;</code> for more info.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMPlayerViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithParams:" title="initWithParams:"></a>
+	<h3 class="subsubtitle method-title">initWithParams:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initialize a video player with paramsters</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithParams:(NSDictionary *)<em>params</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>params</em></dt>
+			<dd><p>A dictionary containing initalization parameters. See <a href="http://www.dailymotion.com/doc/api/player.html">http://www.dailymotion.com/doc/api/player.html</a>#parameters
+for a list of supported parameters.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initialize a video player with paramsters</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMPlayerViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithVideo:" title="initWithVideo:"></a>
+	<h3 class="subsubtitle method-title">initWithVideo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initialize a video player using a video id</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithVideo:(NSString *)<em>videoId</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>videoId</em></dt>
+			<dd><p>A of a video.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initialize a video player using a video id</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMPlayerViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithVideo:params:" title="initWithVideo:params:"></a>
+	<h3 class="subsubtitle method-title">initWithVideo:params:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initialize a video player using a video id</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithVideo:(NSString *)<em>videoId</em> params:(NSDictionary *)<em>params</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>videoId</em></dt>
+			<dd><p>A of a video.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>params</em></dt>
+			<dd><p>A dictionary containing initalization parameters. See <a href="http://www.dailymotion.com/doc/api/player.html">http://www.dailymotion.com/doc/api/player.html</a>#parameters
+for a list of supported parameters.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initialize a video player using a video id</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMPlayerViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/load:" title="load:"></a>
+	<h3 class="subsubtitle method-title">load:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Load another video in the player by specifying its id.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)load:(NSString *)<em>videoId</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>videoId</em></dt>
+			<dd><p>The id of the video to load.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Load another video in the player by specifying its id.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMPlayerViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pause" title="pause"></a>
+	<h3 class="subsubtitle method-title">pause</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pause the video playback.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)pause</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Pause the video playback.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMPlayerViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/play" title="play"></a>
+	<h3 class="subsubtitle method-title">play</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Start the video playback.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)play</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Start the video playback.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMPlayerViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/togglePlay" title="togglePlay"></a>
+	<h3 class="subsubtitle method-title">togglePlay</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Toggle the video playback.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)togglePlay</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Toggle the video playback.</p>
 	</div>
 	
 	
