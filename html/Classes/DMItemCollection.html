@@ -82,6 +82,10 @@
 	
 	<option value="//api/name/canReorder">&nbsp;&nbsp;&nbsp;&nbsp;- canReorder</option>
 	
+	<option value="//api/name/checkPresenceOfItem:do:">&nbsp;&nbsp;&nbsp;&nbsp;- checkPresenceOfItem:do:</option>
+	
+	<option value="//api/name/createItemWithFields:done:">&nbsp;&nbsp;&nbsp;&nbsp;- createItemWithFields:done:</option>
+	
 	<option value="//api/name/flushCache">&nbsp;&nbsp;&nbsp;&nbsp;- flushCache</option>
 	
 	<option value="//api/name/isLocal">&nbsp;&nbsp;&nbsp;&nbsp;- isLocal</option>
@@ -179,6 +183,10 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/canEdit">canEdit</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/canReorder">canReorder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkPresenceOfItem:do:">checkPresenceOfItem:do:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createItemWithFields:done:">createItemWithFields:done:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flushCache">flushCache</a></span></li>
 	
@@ -404,6 +412,15 @@ There is two concreat implementation of this class:</p>
 	</span>
 	
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/checkPresenceOfItem:do:">&ndash;&nbsp;checkPresenceOfItem:do:</a></code>
+		<span class="tooltip"><p>Check of a given item is present in the collection.
+NOTE: This does only work with connections or local collections. For remote collections it generates
+the following request: GET /<object>/ID/<connection>/ITEM_ID</p></span>
+	</span>
+	
+	
 </li>
 						</ul>
 						
@@ -416,6 +433,13 @@ There is two concreat implementation of this class:</p>
 	<span class="tooltip">
 		<code><a href="#//api/name/canEdit">&ndash;&nbsp;canEdit</a></code>
 		<span class="tooltip"><p>Indicates if the collection can be edited by adding or deleting items.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createItemWithFields:done:">&ndash;&nbsp;createItemWithFields:done:</a></code>
+		<span class="tooltip"><p>Create an item to be added to the collection</p></span>
 	</span>
 	
 	
@@ -1239,6 +1263,11 @@ If the collection hit the <code>countLimit</code>, the item at the end of the co
 	
 	
 	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <a href="../Classes/DMItemOperation.html">DMItemOperation</a> instance able to cancel the request.</p>
+	</div>
+	
 	
 	
 	
@@ -1325,6 +1354,128 @@ If the collection hit the <code>countLimit</code>, the item at the end of the co
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>Indicates if the item if the collection can be reordered using <code>moveItemAtIndex:toIndex:</code> method.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItemCollection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/checkPresenceOfItem:do:" title="checkPresenceOfItem:do:"></a>
+	<h3 class="subsubtitle method-title">checkPresenceOfItem:do:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check of a given item is present in the collection.
+NOTE: This does only work with connections or local collections. For remote collections it generates
+the following request: GET /<object>/ID/<connection>/ITEM_ID</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMItemOperation *)checkPresenceOfItem:(DMItem *)<em>item</em> do:(void ( ^ ) ( BOOL present , NSError *error ))<em>callback</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>item</em></dt>
+			<dd><p>The item to check presence of</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callback</em></dt>
+			<dd><p>The block to call once operation is completed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <a href="../Classes/DMItemOperation.html">DMItemOperation</a> instance able to cancel the request.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Check of a given item is present in the collection.
+NOTE: This does only work with connections or local collections. For remote collections it generates
+the following request: GET /<object>/ID/<connection>/ITEM_ID</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DMItemCollection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createItemWithFields:done:" title="createItemWithFields:done:"></a>
+	<h3 class="subsubtitle method-title">createItemWithFields:done:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create an item to be added to the collection</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (DMItemOperation *)createItemWithFields:(NSDictionary *)<em>fields</em> done:(void ( ^ ) ( DMItem *item , NSError *error ))<em>callback</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fields</em></dt>
+			<dd><p>The fields to create the item with</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>callback</em></dt>
+			<dd><p>A block called when the operation is completed</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <a href="../Classes/DMItemOperation.html">DMItemOperation</a> instance able to cancel the request.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create an item to be added to the collection</p>
 	</div>
 	
 	
@@ -1839,7 +1990,7 @@ an item with the same id in its cache, the cached item is returned.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Dailymotion S.A. All rights reserved. (Last updated: 2012-10-09)</span><br />
+						<p><span class="copyright">&copy; 2012 Dailymotion S.A. All rights reserved. (Last updated: 2012-10-24)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 737)</a>.</span></p>
 						
