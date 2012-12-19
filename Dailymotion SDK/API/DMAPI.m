@@ -627,7 +627,7 @@ static NSString *const kDMBoundary = @"eWExXwkiXfqlge7DizyGHc8iIxThEz4c1p8YB33Pr
         NSUInteger fileSize = [[[[NSFileManager defaultManager] attributesOfItemAtPath:fileURL.path error:NULL] objectForKey:NSFileSize] unsignedIntegerValue];
         uploadOperation.totalBytesExpectedToTransfer = fileSize;
         uploadOperation.remoteURL = [NSURL URLWithString:[((NSURL *)result[@"upload_url"]).absoluteString stringByReplacingOccurrencesOfString:@"/upload?" withString:@"/rupload?"]];
-        uploadOperation.completionHandler = nil;
+//        uploadOperation.completionHandler = nil;  -- I do not understand why they are niling the completion handler. It will just force the resumeFileUploadOperation to fail its assertion and break the app.
         [self resumeFileUploadOperation:uploadOperation withCompletionHandler:completionHandler];
     }];
 
