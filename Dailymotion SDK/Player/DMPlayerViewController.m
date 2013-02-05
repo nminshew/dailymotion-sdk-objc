@@ -9,6 +9,7 @@
 #import "DMPlayerViewController.h"
 #import "DMSubscriptingSupport.h"
 #import "DMAlert.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface DMPlayerViewController ()
 
@@ -74,9 +75,9 @@
 
 - (void)initPlayerWithVideo:(NSString *)video
 {
-    if (self._inited) return;
-    self._inited = YES;
-
+//    if (self._inited) return;
+//    self._inited = YES;
+    
     UIWebView *webview = [[UIWebView alloc] init];
     webview.delegate = self;
 
@@ -94,7 +95,7 @@
     {
         webview.allowsInlineMediaPlayback = YES;
     }
-
+    
     // Autoresize by default
     webview.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 
@@ -279,14 +280,14 @@
         NSLog(@"Called DMPlayerViewController load: with a nil video id");
         return;
     }
-    if (self._inited)
-    {
-        [self api:@"load" arg:aVideo];
-    }
-    else
-    {
+//    if (self._inited)
+//    {
+//        [self api:@"load" arg:aVideo];
+//    }
+//    else
+//    {
         [self initPlayerWithVideo:aVideo];
-    }
+//    }
 }
 
 
